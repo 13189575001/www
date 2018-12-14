@@ -6,6 +6,8 @@
     <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/style.css"/>
     <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/skill.css"/>
     <script src="/Fashionmall/Public/User/js/layui/layui.js"></script>
+    <script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
+    <script src="/Fashionmall/Public/User/js/jquery.js" ></script>
     <link rel="stylesheet" href="/Fashionmall/Public/User/js/layui/css/layui.css"  media="all">
 
 </head>
@@ -21,7 +23,6 @@ font-size: 16px;
 
 }
 
-
 </style>
 <script type="text/javascript">
 
@@ -36,6 +37,38 @@ font-size: 16px;
 
 
     });
+function tijao() {
+    $e=$('.layui-textarea').val();
+    $aid=$('.evaluateinput').val();
+
+    if($e!=""){
+        $.ajax({
+            type: "POST",//请求方式
+            data: {
+                aid: $aid,
+                evaluate:$e
+            },
+            url: "<?php echo U('Index/evaluate');?>",
+            //dataType:"json",
+            success: function (result) {
+                //alert(JSON.stringify(result));
+                if (result) {
+
+                    layer.msg("评论成功");
+                    $('.evalzanshi').prepend("<p class=\"bordertr\"><span>用户：我   刚刚</span><p>"+$e+"</p></p>");
+
+                }
+                else {
+                    window.location.href = '<?php echo U("Public/login");?>'
+                }
+            }
+        });
+
+    }else{
+        layer.msg("评论留言不能为空")
+    }
+
+}
 </script>
 <body>
 <!--头部-->
@@ -112,25 +145,16 @@ font-size: 16px;
             <span style="display: block"><b><?php echo ($article["title"]); ?></b><p>发表于：<?php echo ($article["time"]); ?></p></span>
             <span style="text-indent:20em; font-size:12px; padding: 20px 20px">  <?php echo ($article["content"]); ?></span>
            <!--评论留言-->
-            <div class="evaluate">
-                <form method="post">
-                <!--<input type="text" class="evaluateinput" placeholder="写下你的评论吧">-->
+            <div class="evaluates">
+                <form method="post" id="forms">
+                <input type="hidden" class="evaluateinput" name="aid" value="<?php echo ($article["aid"]); ?>">
                  <textarea placeholder="写下你的评论吧" class="layui-textarea" name="evaluate"></textarea>
-                <input type="submit"  class="layui-btn layui-btn-warm" value="提交">
+                <input type="button"  class="layui-btn layui-btn-warm" onclick="tijao()"  style="float: right" value="提交">
                 </form>
                 <!--留言展示-->
-                <div class="evalzanshi" style="overflow-x: auto;overflow-y:auto;width: 100%;min-height:0px;max-height: 100% ">
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
-                    <p>cdsc</p>
+                <div class="evalzanshi" style="overflow-x: auto;overflow-y:auto;width: 100%;height: 100px ">
+                    <?php if(is_array($evaluate)): $i = 0; $__LIST__ = $evaluate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$e): $mod = ($i % 2 );++$i;?><p class="bordertr"><span>用户：<?php echo ($e["username"]); ?>:时间<?php echo ($e["time"]); ?></span><p><?php echo ($e["evaluate"]); ?></p></p><?php endforeach; endif; else: echo "" ;endif; ?>
+
                 </div>
             </div>
 

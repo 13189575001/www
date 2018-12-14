@@ -97,24 +97,59 @@ use Think\Controller;
                  $status=1;
              }
              $model=D('article');
-
+             $post=[];
              $data=$model->field('aid,title')->order('aid desc')->select();
              if(is_array($_GET)&&count($_GET)>0){
                  $get['aid']=I('get.aid');
+                 $post['aid']=$get['aid'];
+
                  $article=$model->where($get)->find();
 
              }else{
-                 $article=$model->find();
+                 $article=$model->order('aid desc')->find();
+                 $post['aid']=$article['aid'];
              }
-             if(IS_POST){
-                 $post=I('post.');
-                 var_dump($post);
-             }
+             $model=D('art_evaluate');
+             $evaluate=$model->order('id desc')->select();
+             $this->assign('evaluate',$evaluate);
+//             if(IS_POST){
+//                 if( session(username)!="") {
+//                     $post['username']=session(nickname);
+//                     $post['evaluate'] = I('post.evaluate');
+//                     $post['time']= date("Y-m-d H:i:s");
+//                     $model->create();
+//                     $res = $model->add($post);
+//                 }else{
+//                     $this->redirect('Public/login');
+//                 }
+//             }
 
              $this->assign('status',$status);
              $this->assign('data',$data);
              $this->assign('article',$article);
              $this->display();
+         }
+         public function evaluate(){
+             if(IS_POST){
+                 $model=D('art_evaluate');
+                 if( session(username)!="") {
+
+                     $post = I('post.');
+                     $post['username']=session(nickname);
+                     $post['time']= date("Y-m-d H:i:s");
+                     $model->create();
+                     //$this->ajaxReturn($post);
+                     $res = $model->add($post);
+                     if($res){
+                         $this->ajaxReturn(1);
+                     }else{
+                         $this->ajaxReturn(0);
+                     }
+                 }else{
+                     $this->ajaxReturn(0);
+                     //$this->redirect('Public/login');
+                 }
+             }
          }
          //产品详情
          public function product_info(){

@@ -6,8 +6,10 @@
     <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/style.css"/>
     <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/skill.css"/>
     <script src="/Fashionmall/Public/User/js/layui/layui.js"></script>
+    <script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
+    <script src="/Fashionmall/Public/User/js/jquery.js" ></script>
     <link rel="stylesheet" href="/Fashionmall/Public/User/js/layui/css/layui.css"  media="all">
-    <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/allgoods.css"/>
+
 </head>
 <style>
 *{
@@ -20,6 +22,7 @@ text-decoration: none;
 font-size: 16px;
 
 }
+
 </style>
 <script type="text/javascript">
 
@@ -34,6 +37,16 @@ font-size: 16px;
 
 
     });
+function tijao() {
+    $e=$('.layui-textarea').val();
+    if($e!=""){
+        $('#forms').submit();
+        window.location.reload();
+    }else{
+        layer.msg("评论留言不能为空")
+    }
+
+}
 </script>
 <body>
 <!--头部-->
@@ -43,7 +56,7 @@ font-size: 16px;
             <div class="websiename">潮流前线</div>
             <div class="cont-top-middle">
                 <ul>
-                    <ul>
+
                         <?php if(($status) == 0): ?><li><a href="<?php echo U('Public/login');?>">登录</a></li>
                             <li><a href="<?php echo U('Public/register');?>">免费注册</a></li><?php endif; ?>
                         <li class="shoppingCart">
@@ -107,14 +120,27 @@ font-size: 16px;
     <div id="skill">
         <div class="skill_left">
 
-            <span style="display: block"><?php echo ($article["title"]); ?><p>发表于：<?php echo ($article["time"]); ?></p></span>
-            <span style="text-indent:20em; font-size:12px;"><?php echo ($article["content"]); ?></span>
+            <span style="display: block"><b><?php echo ($article["title"]); ?></b><p>发表于：<?php echo ($article["time"]); ?></p></span>
+            <span style="text-indent:20em; font-size:12px; padding: 20px 20px">  <?php echo ($article["content"]); ?></span>
+           <!--评论留言-->
+            <div class="evaluate">
+                <form method="post" id="forms">
+                <!--<input type="hidden" class="evaluateinput" name="aid" value="">-->
+                 <textarea placeholder="写下你的评论吧" class="layui-textarea" name="evaluate"></textarea>
+                <input type="button"  class="layui-btn layui-btn-warm" onclick="tijao()"  style="float: right" value="提交">
+                </form>
+                <!--留言展示-->
+                <div class="evalzanshi" style="overflow-x: auto;overflow-y:auto;width: 100%;height: 100px ">
+                    <?php if(is_array($evaluate)): $i = 0; $__LIST__ = $evaluate;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$e): $mod = ($i % 2 );++$i;?><p class="bordertr"><span>用户：<?php echo ($e["username"]); ?>:时间<?php echo ($e["time"]); ?></span><p><?php echo ($e["evaluate"]); ?></p></p><?php endforeach; endif; else: echo "" ;endif; ?>
+
+                </div>
+            </div>
 
         </div>
         <div style="width: 1px;height: 500px;border-left: #d0e9c6 solid; float: left"></div>
         <div class="skill_right">
             <ul>
-                <span >相关问题</span>
+                <span >相关资讯</span>
                 <?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i;?><li><a href="<?php echo U('skill');?>?aid=<?php echo ($d["aid"]); ?>"><?php echo ($d["title"]); ?></a></li><?php endforeach; endif; else: echo "" ;endif; ?>
 
 

@@ -50,7 +50,7 @@
         <?php if(($status) == 0): ?><li><a href="<?php echo U('Public/login');?>">登录</a></li>
           <li><a href="<?php echo U('Public/register');?>">免费注册</a></li><?php endif; ?>
         <li class="shoppingCart">
-          <a href="#">购物车 <img src="/Fashionmall/Public/User/images/xiala.png"></a>
+          <a href="<?php echo U('Personal/shopcart');?>">购物车 <img src="/Fashionmall/Public/User/images/xiala.png"></a>
           <div class=" ShGoods ">
               <table id="goods-table">
                 <?php if(is_array($shopcart)): $i = 0; $__LIST__ = $shopcart;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$shopcart): $mod = ($i % 2 );++$i;?><tr class="goods-table-tr">

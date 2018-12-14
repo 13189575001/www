@@ -1,6 +1,6 @@
 #con{
     width: 100%;
-    background-color: #0a6999;
+    background-color: #f4fdf5;
     height:1000px;
 }
 #skill{
@@ -9,7 +9,8 @@
     height:800px;
     margin-right: auto;
     margin-left: auto;
-    background-color: #0a6999;
+
+
 
 }
 #skill .skill_left{
@@ -17,14 +18,17 @@
     width: 900px;
     height:800px;
     float: left;
+    background-repeat:no-repeat;
+    background-size:100%;
+    background-image: url("../images/zixun.jpg");
     background-color: #FFFFFF;
 
 }
-#skill .skill_left .evaluate{
+#skill .skill_left .evaluates{
     position: absolute;
     bottom: 0;
     left: 0;
-    background-color: #ffb2d5;
+
     width: 100%;
     min-height: 100px;
     max-height: 300px;
@@ -56,8 +60,37 @@
     text-indent: 12px;
     overflow: hidden;
 }
+
 .skill_right ul li a {
     font-size: 12px;
     color: #3D97CB;
     text-decoration: none;
 }
+.bordertr{
+    border-top: #b7b7b7 1px solid;
+    display: block;
+    width: 100%;
+    height: 20px;
+    background-color: #f4fdf5;
+}
+.bordertr span{
+    color: #a4a4a4;
+    font-size: 12px;
+}
+.evalzanshi{
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
