@@ -9,7 +9,7 @@
     <script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
     <script src="/Fashionmall/Public/User/js/jquery.js" ></script>
     <link rel="stylesheet" href="/Fashionmall/Public/User/js/layui/css/layui.css"  media="all">
-
+    <script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 </head>
 <style>
 *{
@@ -120,7 +120,7 @@ function tijao() {
                 <ul>
                     <li><a href="index.html"  >首页</a></li>
                     <li><a href="AllGood.html" >宝贝</a></li>
-                    <li><a href="#" target="_blank">新品</a></li>
+                    <!--<li><a href="#" target="_blank">新品</a></li>-->
                     <li><a href="skill.html" class="active" >搭配技巧</a></li>
                     <li><a href="#" >关于我们</a></li>
                 </ul>
@@ -128,7 +128,7 @@ function tijao() {
             <!--搜索框-->
             <div id="navrboxright">
                 <input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-                <a href="#" class="searchclick">搜索</a>
+                <a href="javascript:;" class="searchclick">搜索</a>
                 <!--历史记录-->
                 <div class="History">历史记录：</div>
 

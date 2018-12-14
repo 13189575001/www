@@ -18,6 +18,7 @@
 <script src="/Fashionmall/Public/User/jquery.min.js"></script>
 <script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
 <script src="/Fashionmall/Public/User/js/layui/layui.js"></script>
+<script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 <script>
     layui.use('upload', function(){
         var upload = layui.upload;
@@ -112,7 +113,7 @@
                 <ul>
                     <li><a href="<?php echo U('Index/index');?>"  class="active">首页</a></li>
                     <li><a href="<?php echo U('Index/AllGood');?>" >宝贝</a></li>
-                    <li><a href="#" >新品</a></li>
+                    <!--<li><a href="#" >新品</a></li>-->
                     <li><a href="<?php echo U('Skill');?>" >搭配技巧</a></li>
                     <li><a href="#" >关于我们</a></li>
                 </ul>
@@ -120,7 +121,7 @@
             <!--搜索框-->
             <div id="navrboxright">
                 <input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-                <a href="#" class="searchclick">搜索</a>
+                <a href="javascript:;" class="searchclick">搜索</a>
                 <!--历史记录-->
                 <div class="History">历史记录：</div>
 

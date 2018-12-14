@@ -95,7 +95,7 @@
     <!--搜索框-->
     <div id="navrboxright">
       <input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-      <a href="#" class="searchclick">搜索</a>
+      <a href="javascript:;" class="searchclick">搜索</a>
       <!--历史记录-->
       <div class="History">历史记录：</div>
 
@@ -208,7 +208,9 @@
   </div>
 
 <script src="/Fashionmall/Public/User/js/jquery.js" type="text/javascript"></script>
+<script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 <script>
+
     //删除购物车
     function deleteGoods(id) {
         // window.location.href = '<?php echo U("Personal/del");?>?sid=' +

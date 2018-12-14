@@ -55,6 +55,8 @@ use Think\Controller;
 
          if(is_array($_GET)&&count($_GET)>0){
                  $cid=I('get.');
+
+             $cid['keywords'] = array("LIKE", '%' .$cid['keywords'] . '%');
              $count = $model->where($cid)->count();
              $Page = new \Think\Page($count, 5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
              $show = $Page->show();// 分页显示输出
@@ -110,7 +112,7 @@ use Think\Controller;
                  $post['aid']=$article['aid'];
              }
              $model=D('art_evaluate');
-             $evaluate=$model->order('id desc')->select();
+             $evaluate=$model->order('id desc')->where($post)->select();
              $this->assign('evaluate',$evaluate);
 //             if(IS_POST){
 //                 if( session(username)!="") {

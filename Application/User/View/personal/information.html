@@ -18,6 +18,7 @@
 <script src="__USER__/jquery.min.js"></script>
 <script src="__USER__/js/layui/layui.all.js"></script>
 <script src="__USER__/js/layui/layui.js"></script>
+<script src="__USER__/js/public.js" type="text/javascript"></script>
 <script>
     layui.use('upload', function(){
         var upload = layui.upload;
@@ -114,7 +115,7 @@
                 <ul>
                     <li><a href="{:U('Index/index')}"  class="active">首页</a></li>
                     <li><a href="{:U('Index/AllGood')}" >宝贝</a></li>
-                    <li><a href="#" >新品</a></li>
+                    <!--<li><a href="#" >新品</a></li>-->
                     <li><a href="{:U('Skill')}" >搭配技巧</a></li>
                     <li><a href="#" >关于我们</a></li>
                 </ul>
@@ -122,7 +123,7 @@
             <!--搜索框-->
             <div id="navrboxright">
                 <input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-                <a href="#" class="searchclick">搜索</a>
+                <a href="javascript:;" class="searchclick">搜索</a>
                 <!--历史记录-->
                 <div class="History">历史记录：</div>
 

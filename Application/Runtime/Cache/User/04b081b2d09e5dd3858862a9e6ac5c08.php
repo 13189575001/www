@@ -39,9 +39,31 @@ font-size: 16px;
     });
 function tijao() {
     $e=$('.layui-textarea').val();
+    $aid=$('.evaluateinput').val();
+
     if($e!=""){
-        $('#forms').submit();
-        window.location.reload();
+        $.ajax({
+            type: "POST",//请求方式
+            data: {
+                aid: $aid,
+                evaluate:$e
+            },
+            url: "<?php echo U('Index/evaluate');?>",
+            //dataType:"json",
+            success: function (result) {
+                //alert(JSON.stringify(result));
+                if (result) {
+
+                    layer.msg("评论成功");
+                    $('.evalzanshi').prepend("<p class=\"bordertr\"><span>用户：我   刚刚</span><p>"+$e+"</p></p>");
+
+                }
+                else {
+                    window.location.href = '<?php echo U("Public/login");?>'
+                }
+            }
+        });
+
     }else{
         layer.msg("评论留言不能为空")
     }
@@ -123,9 +145,9 @@ function tijao() {
             <span style="display: block"><b><?php echo ($article["title"]); ?></b><p>发表于：<?php echo ($article["time"]); ?></p></span>
             <span style="text-indent:20em; font-size:12px; padding: 20px 20px">  <?php echo ($article["content"]); ?></span>
            <!--评论留言-->
-            <div class="evaluate">
+            <div class="evaluates">
                 <form method="post" id="forms">
-                <!--<input type="hidden" class="evaluateinput" name="aid" value="">-->
+                <input type="hidden" class="evaluateinput" name="aid" value="<?php echo ($article["aid"]); ?>">
                  <textarea placeholder="写下你的评论吧" class="layui-textarea" name="evaluate"></textarea>
                 <input type="button"  class="layui-btn layui-btn-warm" onclick="tijao()"  style="float: right" value="提交">
                 </form>
