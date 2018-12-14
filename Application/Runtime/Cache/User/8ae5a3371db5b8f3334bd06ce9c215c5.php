@@ -210,6 +210,12 @@
 <script src="/Fashionmall/Public/User/js/jquery.js" type="text/javascript"></script>
 <script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 <script>
+  $(document).ready(function() {
+      $('.act').click(function () {
+          //alert("fdsfsd");
+          $(this).addClass("active");
+      })
+  });
 
     //删除购物车
     function deleteGoods(id) {

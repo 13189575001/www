@@ -16062,3 +16062,1831 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001470s ]
 
+[ 2018-12-14T22:07:55+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001057s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001166s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0013s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 1   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 45 ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000241s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021215s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021333s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001040s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001145s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001859s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002148s ]
+
+[ 2018-12-14T22:07:59+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html?aid=45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000933s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000996s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001144s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 45 ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000138s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000266s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019132s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019254s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000839s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000936s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001584s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001696s ]
+
+[ 2018-12-14T22:08:01+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html?aid=44
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000733s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000842s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0002s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 44 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 44 ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017785s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001172s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001328s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003847s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004102s ]
+
+[ 2018-12-14T22:08:02+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html?aid=43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000805s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001075s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001185s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0009s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 43 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 43 ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018178s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018284s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000761s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001670s ]
+
+[ 2018-12-14T22:08:04+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html?aid=43
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000767s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001087s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001213s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0006s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 43 LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 43 ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.017634s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017776s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001117s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002651s ]
+
+[ 2018-12-14T22:08:04+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html?aid=45
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000801s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001178s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001360s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0008s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `article` WHERE `aid` = 45 LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 45 ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000141s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000250s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018533s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018773s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000844s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000966s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001664s ]
+
+[ 2018-12-14T22:08:07+08:00 ] ::1 /Fashionmall/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000991s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001133s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `product_cate` GROUP BY id,img  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE ( identify='一周穿搭' )  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000127s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000235s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027916s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028050s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000805s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000920s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001189s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001316s ]
+
+[ 2018-12-14T22:08:07+08:00 ] ::1 /Fashionmall/Public/User/js/jquery.minjs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000038s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001262s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001393s ]
+ERR: 非法操作:User
+
+[ 2018-12-14T22:08:08+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000740s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000879s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000985s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0047s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000256s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000378s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020925s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021033s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000745s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003298s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003422s ]
+
+[ 2018-12-14T22:08:19+08:00 ] ::1 /Fashionmall/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001168s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001312s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product_cate` GROUP BY id,img  [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE ( identify='一周穿搭' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` ORDER BY id desc  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000120s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.030721s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030833s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000995s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001130s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002624s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002797s ]
+
+[ 2018-12-14T22:08:19+08:00 ] ::1 /Fashionmall/Public/User/js/jquery.minjs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001026s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000799s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000916s ]
+ERR: 非法操作:User
+
+[ 2018-12-14T22:08:28+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000040s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000998s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001138s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0013s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000227s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022032s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022144s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001017s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001112s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003971s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004308s ]
+
+[ 2018-12-14T22:08:37+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000676s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000787s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000258s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020899s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021036s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000816s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001547s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001713s ]
+
+[ 2018-12-14T22:10:04+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000059s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000979s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001466s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0042s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000164s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000335s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031812s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.032025s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001755s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001908s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005180s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005341s ]
+
+[ 2018-12-14T22:10:07+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000777s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000820s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000928s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000213s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021759s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021868s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.004428s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004562s ]
+
+[ 2018-12-14T22:10:42+08:00 ] ::1 /Fashionmall/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000769s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001617s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `product_cate` GROUP BY id,img  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE ( identify='一周穿搭' )  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000259s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.031179s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031312s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001050s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001158s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002501s ]
+INFO: [ app_end ] --END-- [ RunTime:0.008295s ]
+
+[ 2018-12-14T22:10:43+08:00 ] ::1 /Fashionmall/Public/User/js/jquery.minjs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001877s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002128s ]
+ERR: 非法操作:User
+
+[ 2018-12-14T22:10:43+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001236s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001649s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0014s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000140s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027061s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027177s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000983s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001400s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001643s ]
+
+[ 2018-12-14T22:10:56+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000797s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002019s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002255s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000228s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021072s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021183s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000759s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000873s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001374s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001532s ]
+
+[ 2018-12-14T22:10:57+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000789s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001199s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001350s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000128s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000273s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021142s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021309s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000856s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000958s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001710s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001832s ]
+
+[ 2018-12-14T22:11:46+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000869s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001007s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = '34'  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Use of undefined constant username - assumed 'username' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0017s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000223s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019557s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019679s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001113s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001249s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001450s ]
+
+[ 2018-12-14T22:12:17+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000890s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000984s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001136s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000169s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000337s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024435s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024574s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000911s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003124s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003405s ]
+
+[ 2018-12-14T22:12:20+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001069s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001082s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001197s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.023436s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023555s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001143s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001530s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001711s ]
+
+[ 2018-12-14T22:14:27+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood/p/2.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001319s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `keywords` LIKE '%%' LIMIT 5,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000136s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000249s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024411s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024565s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001444s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001594s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001398s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001762s ]
+
+[ 2018-12-14T22:14:30+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000138s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001556s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000992s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001107s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0025s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0018s ]
+SQL: SELECT * FROM `product` WHERE `keywords` LIKE '%%' LIMIT 10,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000139s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000324s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024195s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024304s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001204s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001340s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005233s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005544s ]
+
+[ 2018-12-14T22:17:55+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood/p/3.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000841s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001035s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001164s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `keywords` LIKE '%%' LIMIT 10,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000229s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020752s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020870s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001099s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001208s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001683s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001824s ]
+
+[ 2018-12-14T22:17:57+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001450s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020968s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021089s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001202s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001396s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001248s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001419s ]
+
+[ 2018-12-14T22:17:58+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000971s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000995s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000132s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000240s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018982s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019092s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000931s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001028s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.005294s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005411s ]
+
+[ 2018-12-14T22:17:59+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000715s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001078s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001227s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0074s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000114s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000224s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018261s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018370s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001063s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001161s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001012s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001107s ]
+
+[ 2018-12-14T22:18:03+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000947s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001285s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001652s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0016s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000218s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000421s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019169s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019308s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001344s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001483s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001295s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001433s ]
+
+[ 2018-12-14T22:18:04+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001020s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001479s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0079s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000278s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018053s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018182s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001029s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001228s ]
+
+[ 2018-12-14T22:18:06+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000730s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001053s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0025s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000115s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000264s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019224s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019378s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001052s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001167s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002329s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002467s ]
+
+[ 2018-12-14T22:18:11+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000051s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001111s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001359s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001569s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0059s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000150s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000312s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025965s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026086s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001142s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001227s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001356s ]
+
+[ 2018-12-14T22:18:12+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000863s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001590s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001744s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0006s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000371s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000576s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.033756s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.033905s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001140s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001116s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2018-12-14T22:18:14+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000935s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000902s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001048s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000117s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020994s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021115s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001751s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002087s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001896s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002032s ]
+
+[ 2018-12-14T22:18:43+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000779s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000849s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000955s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0051s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000230s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018120s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018240s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001023s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001124s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001229s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001330s ]
+
+[ 2018-12-14T22:18:47+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000062s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000897s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001719s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001916s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0055s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000357s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000616s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.026623s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.026800s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002318s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002498s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002340s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002561s ]
+
+[ 2018-12-14T22:19:02+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000046s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001752s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000901s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001013s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0039s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0021s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000282s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000539s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022835s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022989s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000903s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001305s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001428s ]
+
+[ 2018-12-14T22:19:03+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000867s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001067s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001245s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0041s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000220s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020590s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020708s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002042s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002433s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001669s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001783s ]
+
+[ 2018-12-14T22:19:04+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000825s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001355s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001638s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000207s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000379s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018946s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019059s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000980s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001277s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001398s ]
+
+[ 2018-12-14T22:19:05+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000931s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000966s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000148s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000261s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019627s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019735s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000885s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000982s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001565s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001695s ]
+
+[ 2018-12-14T22:19:05+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000650s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002139s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002269s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0053s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0031s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000189s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000305s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018727s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018836s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001736s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002026s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003100s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003301s ]
+
+[ 2018-12-14T22:19:06+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001042s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001034s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001154s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0044s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0053s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000111s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019973s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020120s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001041s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001268s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001386s ]
+
+[ 2018-12-14T22:19:17+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000968s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001088s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000248s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022657s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022792s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001353s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001461s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001488s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001612s ]
+
+[ 2018-12-14T22:19:18+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000745s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001103s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001310s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000176s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000334s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018849s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018972s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000975s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001076s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001326s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001471s ]
+
+[ 2018-12-14T22:19:20+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000974s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000817s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000923s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0012s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000185s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000352s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021780s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001715s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002915s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003068s ]
+
+[ 2018-12-14T22:19:22+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000758s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000952s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001065s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0085s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0011s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000118s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000225s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019238s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019345s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000960s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001056s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002614s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002880s ]
+
+[ 2018-12-14T22:19:23+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=4
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001092s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000810s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000920s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 4 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000112s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025133s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025248s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000989s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001202s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001058s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001157s ]
+
+[ 2018-12-14T22:19:25+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000039s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001204s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000878s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000989s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0017s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 1 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000160s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000270s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020699s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001194s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001291s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001440s ]
+
+[ 2018-12-14T22:19:27+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000077s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001079s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001144s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001322s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000310s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019840s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020020s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.003035s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.003211s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001257s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001394s ]
+
+[ 2018-12-14T22:24:29+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000043s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000827s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002182s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002340s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0013s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000129s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.025712s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025874s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000985s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001110s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001934s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002071s ]
+
+[ 2018-12-14T22:24:30+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000042s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001070s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000893s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000996s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0036s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000258s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000680s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024467s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.024582s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001119s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001242s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.002557s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002681s ]
+
+[ 2018-12-14T22:24:31+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000877s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000977s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0004s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000119s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000257s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021980s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000964s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001063s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001147s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001245s ]
+
+[ 2018-12-14T22:24:32+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000809s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000862s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000215s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.021521s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021633s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001030s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001147s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001200s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001317s ]
+
+[ 2018-12-14T22:24:33+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001671s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003608s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003748s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0024s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000167s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000295s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022976s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.023098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000993s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001094s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001066s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001165s ]
+
+[ 2018-12-14T22:24:34+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001057s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000953s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001150s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0008s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000209s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000349s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022536s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022770s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001515s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001846s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001085s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001188s ]
+
+[ 2018-12-14T22:24:37+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000681s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000751s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000857s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0038s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000233s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000397s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022160s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022274s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001037s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001177s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001138s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001260s ]
+
+[ 2018-12-14T22:24:39+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=3
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000826s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001235s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001484s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 3 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0009s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000142s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000252s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020658s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020807s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001005s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001108s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001038s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001139s ]
+
+[ 2018-12-14T22:25:04+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000072s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001679s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001852s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002051s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0010s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000324s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000502s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.024918s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.025078s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000973s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001072s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001033s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001143s ]
+
+[ 2018-12-14T22:25:06+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000875s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001015s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0068s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000218s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.022283s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.022455s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001079s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001181s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001187s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001285s ]
+
+[ 2018-12-14T22:25:07+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000754s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001224s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001415s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0005s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0003s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0019s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0028s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000190s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000355s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.019900s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001190s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001303s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001263s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001361s ]
+
+[ 2018-12-14T22:25:08+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html?cid=2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000771s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000871s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000979s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0117s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0016s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0009s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+NOTIC: [8] Undefined index: keywords D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 59 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 1   [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` WHERE `cid` = 2 AND `keywords` LIKE '%%' LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0003s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000113s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000314s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.020603s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020717s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001163s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
+
