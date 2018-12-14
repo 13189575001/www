@@ -1,0 +1,63 @@
+#con{
+    width: 100%;
+    background-color: #0a6999;
+    height:1000px;
+}
+#skill{
+
+    width: 1200px;
+    height:800px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #0a6999;
+
+}
+#skill .skill_left{
+    position: relative;
+    width: 900px;
+    height:800px;
+    float: left;
+    background-color: #FFFFFF;
+
+}
+#skill .skill_left .evaluate{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #ffb2d5;
+    width: 100%;
+    min-height: 100px;
+    max-height: 300px;
+
+}
+.evaluateinput{
+    padding: 0;
+    width: 100%;
+    min-height: 50px;
+}
+#skill .skill_right{
+    float: left;
+    background-color: #FFFFFF;
+    width: 290px;
+    height:800px;
+}
+.skill_right ul{
+    padding-top: 50px;
+    padding-left: 50px;
+    list-style-type: none;
+}
+.skill_right ul li{
+    padding-left: 10px;
+    background: url("../images/sanjiao.jpg") no-repeat 0px 10px;
+    width: 100%;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 10px;
+    text-indent: 12px;
+    overflow: hidden;
+}
+.skill_right ul li a {
+    font-size: 12px;
+    color: #3D97CB;
+    text-decoration: none;
+}
