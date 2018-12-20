@@ -19,6 +19,7 @@
 		<script src="/Fashionmall/Public/User/js/jquery.js" ></script>
 		<script src="/Fashionmall/Public/User/js/jquery.min.js" ></script>
 		<script src="/Fashionmall/Public/User/js/images_file.js" ></script>
+		<script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 	</head>
 
 	<body>
@@ -82,7 +83,7 @@
 					<!--搜索框-->
 					<div id="navrboxright">
 						<input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-						<a href="#" class="searchclick">搜索</a>
+						<a href="javascript:;" class="searchclick">搜索</a>
 						<!--历史记录-->
 						<div class="History">历史记录：</div>
 
@@ -197,8 +198,8 @@
                             $evaluate=$('.eval').val();
                        // var form=document.getElementById('form1')[0];
 
-                        var formData=new FormData($('form1')[0]);
-							alert(JSON.stringify(formData));
+                            var formData = new FormData($('#form1')[0]);
+                            alert(JSON.stringify(formData));
 							$.ajax({
                                    type    : "POST",//请求方式
 								    dataType: 'json',

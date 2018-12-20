@@ -43,10 +43,7 @@
 				<div class="websiename">潮流前线</div>
 				<div class="cont-top-middle">
 					<ul>
-						<if condition="($status) == 0">
-							<li><a href="{:U('Public/login')}">登录</a></li>
-							<li><a href="{:U('Public/register')}">免费注册</a></li>
-						</if>
+
 						<li class="shoppingCart">
 							<a href="{:U('Personal/shopcart')}">购物车 <img src="__USER__/images/xiala.png"></a>
 							<div class=" ShGoods ">
@@ -64,10 +61,10 @@
 							</div>
 
 						</li>
-						<if condition="($status) == 1">
+
 
 							<li class="layuinavitem">
-								<a href="change.html">个人中心<span class="layui-badge-dot"></span></a>
+								<a href="{:U('Personal/information')}">个人中心<span class="layui-badge-dot"></span></a>
 							</li>
 							<li class="layuinavitem">
 								<a href=""><img src="__USER__/images/getAvatar.do.jpg" class="layui-nav-img">我</a>
@@ -78,7 +75,7 @@
 								</dl>
 							</li>
 
-						</if>
+
 					</ul>
 				</div>
 			</div>

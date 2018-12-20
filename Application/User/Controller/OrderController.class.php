@@ -12,11 +12,7 @@ use Think\Controller;
 class OrderController extends LoginControllrt
 {
     public function pay(){
-        $status=0;
-        if(session(id)!="" && session(username)!=""){
-            $status=1;
-        }
-        $this->assign('status',$status);
+
 
         $get=I('get.');
         $uid['uid'] = session(id);
@@ -29,8 +25,8 @@ class OrderController extends LoginControllrt
             $data = $model->where($get)->select();
             $data[0]['num']=$get['num'];
             $data[0]['pid']=$get['id'];
-
-
+            $data[0]['color']=$get['color'];
+            $data[0]['measure']=$get['measure'];
             $this->assign('data', $data);
         }else{
 
@@ -38,8 +34,6 @@ class OrderController extends LoginControllrt
             $data=$model->join('wconfirmoder ON wconfirmoder.pid=product.id')->where('wconfirmoder.status=0')->select();
             $this->assign('data',$data);
             $this->assign('get',$get);
-
-
 
         }
         $address = D('address')->where($uid)->select();
@@ -78,16 +72,16 @@ class OrderController extends LoginControllrt
                 $order['color']=$post['color'][$i];
                 $order['measure']=$post['measure'][$i];
                 $order['order_delivery']=1;
+                $order['status']=0;
                 $pro['id']=$post[pid][$i];
-                //减库存
+                //查看库存
                 $data=$model2->field('skock')->where($pro)->find();
                 //原库存
                 $oldskock=(int)$data[skock];
                 //减库存
                 $newskock['skock']=$oldskock-(int)$order['ordnum'];
                 $model2->where($pro)->save($newskock);
-
-
+                //插入数据
                 $result=$model->add($order);
 //                $this->ajaxReturn($result);
 
@@ -113,7 +107,12 @@ class OrderController extends LoginControllrt
 
     public function order(){
         $model=D('order');
-        $data=$model->field('order.id,order.text,order.ordnum,order.sum_price,order.date,order.color,order.measure,product.img,order.order_state,order.order_delivery,order.order_pay,order.evaluate,order.status')->join('product ON product.id=order.pid ')->select();
+        $d['order.uid']=session(id);
+        $d['order.status']='0';
+        $data=$model->field('order.id,order.text,order.ordnum,order.sum_price,
+        order.date,order.color,order.measure,product.img,order.order_state,
+        order.order_delivery,order.order_pay,order.evaluate,order.status')
+            ->join('product ON product.id=order.pid ')->where($d)->select();
         $this->assign('data',$data);
        // var_dump($data);
         $this->display();
@@ -169,9 +168,60 @@ class OrderController extends LoginControllrt
                 }
             }
 
-
             $this->ajaxReturn($file);
 
+        }
+    }
+    //取消订单
+    public function refund(){
+        $this->display();
+
+    }
+    //删除订单（隐藏）
+    public function delorder(){
+        if(IS_POST){
+            $id=I('post.');
+            $data['status']=1;
+            $data['order_state']="";
+            $result=D('order')->where($id)->save($data);
+//            $this->ajaxReturn($result);
+            if($result){
+                $this->ajaxReturn(1);
+            }else{
+                $this->ajaxReturn(0);
+            }
+        }
+
+
+    }
+    //提醒发货
+    public function tixing(){
+        if(IS_POST){
+            $id=I('post.');
+            $data['order_state']=1;
+            $data['order_delivery']="";
+            $result=D('order')->where($id)->save($data);
+//            $this->ajaxReturn($result);
+            if($result){
+                $this->ajaxReturn(1);
+            }else{
+                $this->ajaxReturn(0);
+            }
+        }
+    }
+    //提醒发货
+    public function confirmre(){
+        if(IS_POST){
+            $id=I('post.');
+            $data['order_state']=1;
+            $data['order_delivery']="";
+            $result=D('order')->where($id)->save($data);
+//            $this->ajaxReturn($result);
+            if($result){
+                $this->ajaxReturn(1);
+            }else{
+                $this->ajaxReturn(0);
+            }
         }
     }
 

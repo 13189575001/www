@@ -29,7 +29,7 @@
 
 		<div class="login-banner">
 			<div class="login-main">
-				<div class="login-banner-bg"><span></span><img src="/Fashionmall/Public/User/images/big.jpg" /></div>
+				<div class="login-banner-bg"><span></span><img src="/Fashionmall/Public/User/images/01.jpg" /></div>
 				<div class="login-box">
 
 							<h3 class="title">登录商城</h3>

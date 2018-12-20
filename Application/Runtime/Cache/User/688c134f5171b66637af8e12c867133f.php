@@ -73,7 +73,7 @@
 
 		<div class="res-banner">
 			<div class="res-main">
-				<div class="login-banner-bg"><span></span><img src="/Fashionmall/Public/User/images/big.jpg" /></div>
+				<div class="login-banner-bg"><span></span><img src="/Fashionmall/Public/User/images/01.jpg" /></div>
 				<div class="login-box">
 
 						<div class="am-tabs" id="doc-my-tabs">

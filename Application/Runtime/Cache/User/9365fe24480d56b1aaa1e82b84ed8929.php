@@ -18,7 +18,7 @@
 		<link rel="stylesheet" href="/Fashionmall/Public/User/js/layui/css/layui.css"  media="all">
 		<script src="/Fashionmall/Public/User/js/layui/layui.js"></script>
 		<script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
-
+		<script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 	</head>
 	<style>
 		*{
@@ -29,6 +29,8 @@
 			color: #ffffff;
 		}
 	</style>
+	<script>
+	</script>
 	<body>
 		<!--头 -->
 		<div class="container">
@@ -89,7 +91,7 @@
 					<!--搜索框-->
 					<div id="navrboxright">
 						<input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-						<a href="#" class="searchclick">搜索</a>
+						<a href="javascript:;" class="searchclick">搜索</a>
 						<!--历史记录-->
 						<div class="History">历史记录：</div>
 
@@ -210,8 +212,8 @@
 																	<p class="order-info"><a href="logistics.html">查看物流</a></p>
 																</div>
 															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+															<li class="td td-change" onclick="delorder('<?php echo ($d["id"]); ?>')">
+																<div class="am-btn am-btn-danger anniu delorder">
 																	删除订单</div>
 															</li>
 														</div>
@@ -257,7 +259,7 @@
 																	</li>
 																	<li class="td td-operation">
 																		<div class="item-operation">
-																			<a href="refund.html">退款/退货</a>
+																			<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
 																		</div>
 																	</li>
 																</ul>
@@ -391,7 +393,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款</a>
+																	<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款</a>
 																</div>
 															</li>
 														</ul>
@@ -412,8 +414,8 @@
 																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
 																</div>
 															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+															<li class="td td-change" onclick="tixing('<?php echo ($d["id"]); ?>')">
+																<div class="am-btn am-btn-danger anniu tixing">
 																	提醒发货</div>
 															</li>
 															</li>
@@ -665,6 +667,8 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 
+																	<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
+
 																</div>
 															</li>
 														</ul>
@@ -677,6 +681,7 @@
 																<p>含运费：<span>10.00</span></p>
 															</div>
 														</li>
+
 														<div class="move-right">
 
 															<li class="td td-status">
@@ -685,8 +690,8 @@
 																	<p class="order-info"><a href="orderinfo.html">订单详情</a></p>
 																</div>
 															</li>
-															<li class="td td-change">
-																<div class="am-btn am-btn-danger anniu">
+															<li class="td td-change" onclick="tixing('<?php echo ($d["id"]); ?>')">
+																<div class="am-btn am-btn-danger anniu tixing">
 																	提醒发货</div>
 															</li>
 															</li>
@@ -737,7 +742,7 @@
 															<li class="td td-item">
 																<div class="item-pic">
 																	<a href="#" class="J_MakePoint">
-																		<img src="/Fashionmall/Public/User/<?php echo ($d["img"]); ?>" class="itempic J_ItemImg">
+																		<img src="/Fashionmall/Public/User/<?php echo ($d3["img"]); ?>" class="itempic J_ItemImg">
 																	</a>
 																</div>
 																<div class="item-info">
@@ -762,7 +767,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="refund.html?id=<?php echo ($d3["id"]); ?>">退款/退货</a>
 																</div>
 															</li>
 														</ul>
@@ -786,7 +791,7 @@
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
 															</li>
-															<li class="td td-change">
+															<li class="td td-change" >
 																<div class="am-btn am-btn-danger anniu">
 																	确认收货</div>
 															</li>
@@ -911,8 +916,7 @@
 				<div class="footers">
 					<div class="footer-hd">
 						<p>
-							<a href="#">xxx科技</a>
-							<b>|</b>
+
 							<a href="#">商城首页</a>
 							<b>|</b>
 							<a href="#">支付宝</a>

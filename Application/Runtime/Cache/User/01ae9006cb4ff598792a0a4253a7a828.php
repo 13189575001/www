@@ -52,10 +52,10 @@
 					<i class="iconfont"></i>
 				</a>
 				<ul class="user-menu">
-					<li><a rel="nofollow" href="" target="_blank" >个人中心</a></li>
-					<li><a rel="nofollow" href="" target="_blank"  >评价晒单</a></li>
-					<li><a rel="nofollow" href="" target="_blank" >我的喜欢</a></li>
-					<li><a rel="nofollow" href="" target="_blank" >我的账户</a></li>
+					<li><a rel="nofollow" href="<?php echo U('Personal/information');?>" target="_blank" >个人中心</a></li>
+					<li><a rel="nofollow" href="<?php echo U('Order/comment');?>" target="_blank"  >评价晒单</a></li>
+					<!--<li><a rel="nofollow" href="" target="_blank" >我的喜欢</a></li>-->
+					<!--<li><a rel="nofollow" href="" target="_blank" >我的账户</a></li>-->
 					<li><a rel="nofollow" href="<?php echo U('Public/logout');?>" onclick="return confirm('确定要退出吗')" >退出登录</a>
 					</li>
 				</ul>

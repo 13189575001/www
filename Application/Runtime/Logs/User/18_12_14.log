@@ -17890,3 +17890,149 @@ INFO: [ app_end ] --START--
 INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001113s ]
 INFO: [ app_end ] --END-- [ RunTime:0.001234s ]
 
+[ 2018-12-14T22:26:23+08:00 ] ::1 /Fashionmall/index.php/Index/skill.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000831s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001252s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 98 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0017s ]
+SQL: SELECT `aid`,`title` FROM `article` ORDER BY aid desc  [ RunTime:0.0006s ]
+SQL: SELECT * FROM `article` ORDER BY aid desc LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `art_evaluate` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `art_evaluate` WHERE `aid` = 45 ORDER BY id desc  [ RunTime:0.0007s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000121s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000232s ]
+NOTIC: [8] Undefined variable: shopcart D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\85901e70040edc0e32efcb08a5918aaf.php 第 88 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.018425s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018588s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000942s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001055s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001413s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001565s ]
+
+[ 2018-12-14T22:26:26+08:00 ] ::1 /Fashionmall/index.php/Index/AllGood.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000773s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001011s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001126s ]
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0008s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0006s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 51 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `product` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SELECT * FROM `product` LIMIT 0,5   [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0007s ]
+SQL: SELECT * FROM `product_cate`  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000110s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.019964s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.020100s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001047s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001144s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001129s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001253s ]
+
+[ 2018-12-14T22:26:26+08:00 ] ::1 /Fashionmall/index.php/Index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000700s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000834s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000963s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Controller\IndexController.class.php 第 20 行.
+SQL: SHOW COLUMNS FROM `shoppingcart` [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `product` [ RunTime:0.0007s ]
+NOTIC: [8] Use of undefined constant id - assumed 'id' D:\wamp64\www\PHP\Fashionmall\Application\User\Model\ShoppingcartModel.class.php 第 14 行.
+SQL: SELECT product.cid,product.goodsname,product.pro_no,product.keywords,product.describe,product.img,product.price,product.skock,product.status,product.identify,shoppingcart.id,shoppingcart.pid,shoppingcart.uid,shoppingcart.num,shoppingcart.color,shoppingcart.measure FROM `product` INNER JOIN shoppingcart ON shoppingcart.pid=product.id  WHERE `uid` = null  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `product_cate` [ RunTime:0.0006s ]
+SQL: SELECT * FROM `product_cate` GROUP BY id,img  [ RunTime:0.0005s ]
+SQL: SELECT * FROM `product` WHERE ( identify='一周穿搭' )  [ RunTime:0.0004s ]
+SQL: SELECT * FROM `product` ORDER BY id desc  [ RunTime:0.0004s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000203s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000315s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.027129s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027322s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001156s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001741s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001873s ]
+
+[ 2018-12-14T22:26:26+08:00 ] ::1 /Fashionmall/Public/User/js/jquery.minjs
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001649s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001538s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001678s ]
+ERR: 非法操作:User
+
+[ 2018-12-14T22:26:28+08:00 ] ::1 /Fashionmall/index.php/Public/register.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001697s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001688s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001828s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000143s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000274s ]
+NOTIC: [8] Undefined variable: d D:\wamp64\www\PHP\Fashionmall\Application\Runtime\Cache\User\688c134f5171b66637af8e12c867133f.php 第 39 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.047824s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047970s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001703s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001843s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003112s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003250s ]
+
+[ 2018-12-14T22:26:28+08:00 ] ::1 /Fashionmall/Public/User/images/big.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000812s ]
+
+[ 2018-12-14T22:26:36+08:00 ] ::1 /Fashionmall/index.php/Public/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001190s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001156s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001271s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000090s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000201s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.029046s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029290s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001892s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002058s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001528s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001807s ]
+
+[ 2018-12-14T22:26:36+08:00 ] ::1 /Fashionmall/Public/User/images/big.jpg
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000804s ]
+

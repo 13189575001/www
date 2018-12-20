@@ -19,7 +19,7 @@
 		<script src="/Fashionmall/Public/User/js/layui/layui.js"></script>
 		<script src="/Fashionmall/Public/User/js/layui/layui.all.js"></script>
 		<script src="/Fashionmall/Public/User/js/jquery.js" ></script>
-
+		<script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 	</head>
 	<style>
 		*{
@@ -35,7 +35,7 @@
 		.activebg {
 			position: relative;
 			display: inline-block;
-			background-image: url(/Fashionmall/Public/User/images/sprite.png);
+			/*background-image: url(../images/sprite.png);*/
 			background-position: -98px -135px;
 			width: 29px;
 			height: 29px;
@@ -102,7 +102,7 @@
 				<!--搜索框-->
 				<div id="navrboxright">
 					<input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-					<a href="#" class="searchclick">搜索</a>
+					<a href="javascript:;" class="searchclick">搜索</a>
 					<!--历史记录-->
 					<div class="History">历史记录：</div>
 
@@ -189,22 +189,22 @@
 					<li class="person">
 						<a href="#">个人资料</a>
 						<ul>
-							<li> <a href="information.html">个人信息</a></li>
-							<li> <a href="safety.html">安全设置</a></li>
-							<li> <a href="address.html">收货地址</a></li>
+							<li> <a href="<?php echo U('Personal/information');?>">个人信息</a></li>
+							<li> <a href="<?php echo U('Personal/safety');?>">安全设置</a></li>
+							<li> <a href="<?php echo U('Personal/address');?>">收货地址</a></li>
 						</ul>
 					</li>
 					<li class="person">
 						<a href="#">我的交易</a>
 						<ul>
-							<li><a href="order.html">订单管理</a></li>
+							<li><a href="<?php echo U('Order/order');?>">订单管理</a></li>
 							<li> <a href="change.html">退款售后</a></li>
 						</ul>
 					</li>
 					<li class="person">
 						<a href="#">我的资产</a>
 						<ul>
-							<li> <a href="coupon.html">优惠券 </a></li>
+							<li> <a href="#">优惠券 </a></li>
 							<li> <a href="bonus.html">红包</a></li>
 							<li> <a href="bill.html">账单明细</a></li>
 						</ul>
@@ -215,7 +215,7 @@
 						<ul>
 							<li> <a href="collection.html">收藏</a></li>
 							<li> <a href="foot.html">足迹</a></li>
-							<li> <a href="comment.html">评价</a></li>
+							<li> <a href="<?php echo U('Order/comment');?>">评价</a></li>
 							<li> <a href="news.html">消息</a></li>
 						</ul>
 					</li>

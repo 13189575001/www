@@ -16,6 +16,7 @@
     <script src="/Fashionmall/Public/User/AmazeUI-2.4.2/assets/js/jquery.min.js"></script>
     <script src="/Fashionmall/Public/User/AmazeUI-2.4.2/assets/js/amazeui.js"></script>
     <link  type="text/css" rel="stylesheet"  href="/Fashionmall/Public/User/css/style.css"/>
+    <script src="/Fashionmall/Public/User/js/public.js" type="text/javascript"></script>
 </head>
 <style>
     *{
@@ -63,7 +64,7 @@
             <!--搜索框-->
             <div id="navrboxright">
                 <input id="search" name="" type="search" value="" size="30" placeholder="搜索/店铺">
-                <a href="#" class="searchclick" style="color: #FFFFFF">搜索</a>
+                <a href="javascript:;" class="searchclick" style="color: #FFFFFF">搜索</a>
                 <!--历史记录-->
                 <div class="History">历史记录：</div>
 
@@ -324,7 +325,7 @@
                 <ul>
                     <li> <a href="collection.html">收藏</a></li>
                     <li> <a href="foot.html">足迹</a></li>
-                    <li> <a href="comment.html">评价</a></li>
+                    <li> <a href="<?php echo U('Order/comment');?>">评价</a></li>
                     <li> <a href="news.html">消息</a></li>
                 </ul>
             </li>

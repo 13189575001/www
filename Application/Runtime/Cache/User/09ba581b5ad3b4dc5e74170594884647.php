@@ -43,8 +43,7 @@
 				<div class="websiename">潮流前线</div>
 				<div class="cont-top-middle">
 					<ul>
-						<?php if(($status) == 0): ?><li><a href="<?php echo U('Public/login');?>">登录</a></li>
-							<li><a href="<?php echo U('Public/register');?>">免费注册</a></li><?php endif; ?>
+
 						<li class="shoppingCart">
 							<a href="<?php echo U('Personal/shopcart');?>">购物车 <img src="/Fashionmall/Public/User/images/xiala.png"></a>
 							<div class=" ShGoods ">
@@ -60,8 +59,10 @@
 							</div>
 
 						</li>
-						<?php if(($status) == 1): ?><li class="layuinavitem">
-								<a href="change.html">个人中心<span class="layui-badge-dot"></span></a>
+
+
+							<li class="layuinavitem">
+								<a href="<?php echo U('Personal/information');?>">个人中心<span class="layui-badge-dot"></span></a>
 							</li>
 							<li class="layuinavitem">
 								<a href=""><img src="/Fashionmall/Public/User/images/getAvatar.do.jpg" class="layui-nav-img">我</a>
@@ -70,7 +71,9 @@
 									<dd><a href="javascript:;">安全管理</a></dd>
 									<dd><a href="<?php echo U('Public/logout');?>" onclick=" return confirm('确定退出吗')">退了</a></dd>
 								</dl>
-							</li><?php endif; ?>
+							</li>
+
+
 					</ul>
 				</div>
 			</div>
