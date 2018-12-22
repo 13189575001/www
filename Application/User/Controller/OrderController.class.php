@@ -41,8 +41,6 @@ class OrderController extends LoginControllrt
         $this->assign('address', $address);
 
 
-
-
         $this->display();
     }
     public function submit(){
@@ -107,8 +105,9 @@ class OrderController extends LoginControllrt
 
     public function order(){
         $model=D('order');
-        $d['order.uid']=session(id);
+        $d['order.uid']=session(id);//设置限制查询
         $d['order.status']='0';
+        //根据上面两个条件查询
         $data=$model->field('order.id,order.text,order.ordnum,order.sum_price,
         order.date,order.color,order.measure,product.img,order.order_state,
         order.order_delivery,order.order_pay,order.evaluate,order.status')
@@ -118,7 +117,14 @@ class OrderController extends LoginControllrt
         $this->display();
     }
     //查看评价
-    public function commnent(){
+    public function comment(){
+        $wh['evaluate.uid']=session(id);
+        $model=D('evaluate');
+        $data=$model->field('evaluate.*,`order`.text,`order`.color,`order`.measure')
+            ->join('`order` ON `order`.id=evaluate.oid')->where($wh)->select();
+        $this->assign('data',$data);
+        //var_dump($data);die;
+
 
         $this->display();
     }
@@ -129,48 +135,78 @@ class OrderController extends LoginControllrt
             if (is_array($_GET) && count($_GET) > 0) {
                 $get = I('get.id');
 
-                $data = D('order')->field('order.id,order.sum_price,product.img,order.measure,order.color,order.text')->join('product ON product.id=order.pid ')->where('order.id=%d', $get)->select();
+                $data = D('order')->field('order.id,order.pid,order.sum_price,product.img,order.measure,order.color,order.text')->join('product ON product.id=order.pid ')->where('order.id=%d', $get)->select();
                 $this->assign('data', $data);
                 // var_dump($data);die();
             }
+        if(IS_POST){
+            $file=I('post.');
+            // $this->ajaxReturn($file);
+            $upload = new \Think\Upload();// 实例化上传类
+            $upload->maxSize   =     3145728 ; // 设置附件上传大小
+            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
+            $upload->rootPath  = './Public/User/evaluate_img/'; // 设置附件上传根目录
+            $upload->savePath  =    '';    // 设置附件上传目录
+            $upload->subName   ='';
+            // 上传文件
+
+
+            // 上传文件
+              $info   =  $upload->upload();
+              //存数据库
+            $file['img']='evaluate_img/'.$info[0]['savename'];;
+            $file['uid']=session(id);
+            $file['date']=date('Y-m-d H:i:s');
+            D('evaluate')->add($file);
+            $wh['id']=$file['oid'];
+            $data['evaluate']=1;
+
+            D('order')->where($wh)->save($data);
+
+              $this->redirect('Order/comment');
+
+
+        }
 
 
 
         $this->display();
     }
     public function evaluate(){
-        if(IS_POST){
-            $file=I('post.');
-            var_dump($file);die;
-            $this->ajaxReturn($file['intro_pic']);
-            $upload = new \Think\Upload();// 实例化上传类
-               $upload->maxSize   =     3145728 ; // 设置附件上传大小
-
-              $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
-
-                $upload->savePath  =      './Public/User/evaluate_img';    // 设置附件上传目录
-                // 上传文件
-
-            $info=array();
-            $a = '';
+//        if(IS_POST){
+//            $file=I('post.');
+//
+//           // $this->ajaxReturn($file);
+//            $upload = new \Think\Upload();// 实例化上传类
+//            $upload->maxSize   =     3145728 ; // 设置附件上传大小
+//
+//            $upload->exts      =     array('jpg', 'gif', 'png', 'jpeg'); // 设置附件上传类型
+//
+//            $upload->savePath  =      './Public/User/evaluate_img';    // 设置附件上传目录
+//                // 上传文件
+//
+//            $info=array();
+//            $a = '';
+//            $this->ajaxReturn($file);die;
             //通过遍历把刚刚存入的图片。依次拼成图片路径，你们可以通过var_dump去查看输去内容
-            foreach ($file['intro_pic']['name'] as $key=>$value){
-                $file1=array();
-                $file1["intro_pic"]['name']=$value;
-                $file1["intro_pic"]['type']=$file['intro_pic']["type"][$key];
-                $file1["intro_pic"]['tmp_name']=$file['intro_pic']["tmp_name"][$key];
-                $file1["intro_pic"]['error']=$file['intro_pic']["error"][$key];
-                $file1["intro_pic"]['size']=$file['intro_pic']["size"][$key];
-                $info   =   $upload->upload($file1);
-                foreach ($info as $key=>$value)
-                {
-                    $a.="#".$value['savepath'].$value['savename'];//我用符号把图片路径拼起来
-                }
-            }
+//            foreach ($file['intro_pic']['name'] as $key=>$value){
+//                $file1=array();
+//                $file1["intro_pic"]['name']=$value;
+//                $file1["intro_pic"]['type']=$file['intro_pic']["type"][$key];
+//                $file1["intro_pic"]['tmp_name']=$file['intro_pic']["tmp_name"][$key];
+//                $file1["intro_pic"]['error']=$file['intro_pic']["error"][$key];
+//                $file1["intro_pic"]['size']=$file['intro_pic']["size"][$key];
+//                $info   =   $upload->upload($file1);
+//                $this->ajaxReturn($file1);die;
+//                foreach ($info as $key=>$value)
+//                {
+//                    $a.="#".$value['savepath'].$value['savename'];//我用符号把图片路径拼起来
+//                }
+//            }
 
-            $this->ajaxReturn($file);
+            //$this->ajaxReturn($file);
 
-        }
+//        }
     }
     //取消订单
     public function refund(){
@@ -209,12 +245,12 @@ class OrderController extends LoginControllrt
             }
         }
     }
-    //提醒发货
+    //确认收货
     public function confirmre(){
         if(IS_POST){
             $id=I('post.');
-            $data['order_state']=1;
-            $data['order_delivery']="";
+            $data['order_state']=0;
+            $data['evaluate']=0;
             $result=D('order')->where($id)->save($data);
 //            $this->ajaxReturn($result);
             if($result){
@@ -223,6 +259,19 @@ class OrderController extends LoginControllrt
                 $this->ajaxReturn(0);
             }
         }
+    }
+    public function refunds(){
+
+        if (is_array($_GET) && count($_GET) > 0) {
+            $get['order.id']=I('get.id');
+            $data=D('order')->field('order.id,order.text,order.ordnum,order.sum_price,
+        order.date,order.color,order.measure,product.img,order.order_state,
+        order.order_delivery,order.order_pay,order.evaluate,order.status')
+                ->join('product ON product.id=order.pid ')->where($get)->select();
+            $this->assign('data',$data);
+        }
+        $this->display();
+
     }
 
 }

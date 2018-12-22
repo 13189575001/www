@@ -75,8 +75,8 @@
 						<ul>
 							<li><a href="<?php echo U('Index/index');?>"  class="active">首页</a></li>
 							<li><a href="<?php echo U('Index/AllGood');?>" >宝贝</a></li>
-							<li><a href="#" >新品</a></li>
-							<li><a href="<?php echo U('Skill');?>" >搭配技巧</a></li>
+							<!--<li><a href="#" >新品</a></li>-->
+							<li><a href="<?php echo U('Index/Skill');?>" >搭配技巧</a></li>
 							<li><a href="#" >关于我们</a></li>
 						</ul>
 					</div>
@@ -105,11 +105,12 @@
 							<div class="am-fl am-cf"><strong class="am-text-danger am-text-lg">发表评论</strong> / <small>Make&nbsp;Comments</small></div>
 						</div>
 						<hr/>
-                      <?php if(is_array($data)): $i = 0; $__LIST__ = array_slice($data,0,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i;?><div class="comment-main">
+                      <?php if(is_array($data)): $i = 0; $__LIST__ = array_slice($data,0,null,true);if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i;?><form method="post" id="form1"  enctype="multipart/form-data">
+						<div class="comment-main">
 							<div class="comment-list">
 								<div class="item-pic">
 									<a href="#" class="J_MakePoint">
-										<img src="/Fashionmall/Public/User/images/1.jpg" class="itempic">
+										<img src="/Fashionmall/Public/User/<?php echo ($d["img"]); ?>" class="itempic">
 									</a>
 								</div>
 
@@ -132,14 +133,14 @@
 								</div>
 								<div class="clear"></div>
 								<div class="item-comment">
-									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！" class="eval"></textarea>
+									<textarea placeholder="请写下对宝贝的感受吧，对他人帮助很大哦！" class="eval" name="evaluate"></textarea>
 								</div>
 
 
 								<div class="filePic">
-									<form method="post" id="form1"  enctype="multipart/form-data">
+
 									<input type="file" class="inputPic"  name="'intro_pic[]" id="file" multiple="multiple"  allowexts="gif,jpeg,jpg,png,bmp"  accept="images/*" >
-									</form>
+
 									<span>晒照片(0/5)</span>
 									<!--<img src="/Fashionmall/Public/User/images/1.jpg" >-->
 									<div id="image-wrap" style="width: 500px;height: 50px"></div>
@@ -147,14 +148,18 @@
 							     </div>
 								<div class="item-opinion">
 								   <div id="evaluate" style="width: 600px;"></div>
+                                    <input type="hidden" value="<?php echo ($d["id"]); ?>" name="oid" >
+                                    <input type="hidden" value="<?php echo ($d["pid"]); ?>" name="pid" >
+									<input type="hidden" value="0" name="star" class="star">
 							    </div>
 							</div>
 
 								<div class="info-btn">
-									<div class="am-btn am-btn-danger" onclick="evaluates('<?php echo ($d["id"]); ?>')">发表评论</div>
+									<input type="submit" value="发表评论" class="am-btn am-btn-danger" >
+									<!--<div class="am-btn am-btn-danger" onclick="evaluates('<?php echo ($d["id"]); ?>')">发表评论</div>-->
 									<!--<button class="layui-btn layui-btn-warm">发表评论</button>-->
 								</div>
-						</div><?php endforeach; endif; else: echo "" ;endif; ?>
+						</div></form><?php endforeach; endif; else: echo "" ;endif; ?>
 					</div>
 
 
@@ -188,44 +193,46 @@
                                         ,'5': '极好'
                                     };
                                     star=value;
+                                    $('.star').val(value);
 
                                     this.span.text(arrs[value] || ( value + "星"));
                                 }
                             })
                         });
-                        function evaluates(id){
-
-                            $evaluate=$('.eval').val();
-                       // var form=document.getElementById('form1')[0];
-
-                            var formData = new FormData($('#form1')[0]);
-                            alert(JSON.stringify(formData));
-							$.ajax({
-                                   type    : "POST",//请求方式
-								    dataType: 'json',
-                                   data    : {
-                                    id      : id,
-                                    evaluate: $evaluate,
-                                    star    : star,
-                                    data:formData,
-                                    //ajax2.0可以不用设置请求头，但是jq帮我们自动设置了，这样的话需要我们自己取消掉
-                                    contentType:false,
-                                    //取消帮我们格式化数据，是什么就是什么
-                                    processData:false,
-                                },
-                                url: "<?php echo U('evaluate');?>",
-
-                                success: function (data) {
-                                    alert(JSON.stringify(data))
-
-                                }
-                            });
-
-
-
-
-
-						}
+                       //  function evaluates(id){
+                       //
+                       //      $evaluate=$('.eval').val();
+                       // // var form=document.getElementById('form1')[0];
+                       //
+                       //      // var formData = new FormData($('#form1')[0]);
+                       //      // alert(JSON.stringify(formData));
+						// 	$.ajax({
+                       //             type    : "POST",//请求方式
+						// 		    dataType: 'json',
+                       //             data    : {
+                       //              id      : id,
+                       //              evaluate: $evaluate,
+                       //              star    : star,
+                       //              // data:formData,
+                       //              // //ajax2.0可以不用设置请求头，但是jq帮我们自动设置了，这样的话需要我们自己取消掉
+                       //              // contentType:false,
+                       //              // //取消帮我们格式化数据，是什么就是什么
+                       //              // processData:false,
+                       //          },
+                       //          url: "<?php echo U('commentlist');?>",
+                       //
+                       //          success: function (data) {
+                       //              alert(JSON.stringify(data))
+                       //
+                       //          }
+                       //      });
+						// 	$('#form1').submit();
+                       //
+                       //
+                       //
+                       //
+                       //
+						// }
 
                         $(document).ready(function(){
 
@@ -259,15 +266,7 @@
 							<a href="#">物流</a>
 						</p>
 					</div>
-					<div class="footer-bd">
-						<p>
-							<a href="#">关于恒望</a>
-							<a href="#">合作伙伴</a>
-							<a href="#">联系我们</a>
-							<a href="#">网站地图</a>
-							<em>© 2015-2025 Hengwang.com 版权所有. 更多模板 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></em>
-						</p>
-					</div>
+
 				</div>
 			</div>
 

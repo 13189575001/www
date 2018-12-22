@@ -128,11 +128,11 @@
 						</div>
 					</div>
 					
-					
+					<volist name="data" id="d">
 						<div class="refund-aside">
 							<div class="item-pic">
 								<a href="#" class="J_MakePoint">
-									<img src="../images/comment.jpg_400x400.jpg" class="itempic">
+									<img src="__USER__/{$d.img}" class="itempic">
 								</a>
 							</div>
 
@@ -140,38 +140,39 @@
 
 								<div class="item-name">
 									<a href="#">
-										<p class="item-basic-info">美康粉黛醉美唇膏 持久保湿滋润防水不掉色</p>
+										<p class="item-basic-info">{$d.text}</p>
 									</a>
 								</div>
 								<div class="info-little">
-									<span>颜色：洛阳牡丹</span>
-									<span>包装：裸装</span>
+									<span>颜色：{$d.color}</span>
+									<span>包装：{$d.measure}</span>
 								</div>
 							</div>
 							<div class="item-info">
 								<div class="item-ordernumber">
-									<span class="info-title">订单编号：</span><a>1474784641639947</a>
+									<span class="info-title">订单编号：</span><a>{$d.id}</a>
 								</div>
 								<div class="item-price">
-									<span class="info-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span><span class="price">19.88元</span>
-									<span class="number">×1</span><span class="item-title">(数量)</span>
+									<span class="info-title">价&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;格：</span><span class="price">{$d.sum_price}</span>
+									<span class="number">×{$d.ordnum}</span><span class="item-title">(数量)</span>
 								</div>
 								<div class="item-amount">
-									<span class="info-title">小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amount">19.88元</span>
+									<span class="info-title">小&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amount">{$d.sum_price}元</span>
 								</div>
 								<div class="item-pay-logis">
-									<span class="info-title">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="price">10.00元</span>
+									<span class="info-title">运&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;费：</span><span class="price">00.00元</span>
 								</div>
 								<div class="item-amountall">
-									<span class="info-title">总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amountall">29.88元</span>
+									<span class="info-title">总&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;计：</span><span class="amountall">{$d.sum_price}元</span>
 								</div>
 								<div class="item-time">
-									<span class="info-title">成交时间：</span><span class="time">2015-12-12&nbsp;17:07</span>
+									<span class="info-title">成交时间：</span><span class="time">{$d.date}</span>
 								</div>
 
 							</div>
 							<div class="clear"></div>
 						</div>
+                    </volist>
 
 						<div class="refund-main">
 							<div class="item-comment">
@@ -201,7 +202,7 @@
 								<div class="am-form-group">
 									<label for="refund-money" class="am-form-label">退款金额<span>（不可修改）</span></label>
 									<div class="am-form-content">
-										<input type="text" id="refund-money" readonly="readonly" placeholder="19.88">
+										<input type="text" id="refund-money" readonly="readonly" placeholder="{$data[0][sum_price]}">
 									</div>
 								</div>
 								<div class="am-form-group">
@@ -240,15 +241,7 @@
 							<a href="#">物流</a>
 						</p>
 					</div>
-					<div class="footer-bd">
-						<p>
-							<a href="#">关于恒望</a>
-							<a href="#">合作伙伴</a>
-							<a href="#">联系我们</a>
-							<a href="#">网站地图</a>
-							<em>© 2015-2025 Hengwang.com 版权所有. 更多模板 <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></em>
-						</p>
-					</div>
+
 				</div>
 			</div>
 

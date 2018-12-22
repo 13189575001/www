@@ -157,7 +157,7 @@
 										<div class="order-list">
 											<volist name="data" id="d">
 
-												<if condition="($d.order_state eq '0')">
+												<if condition="($d.evaluate eq '1')">
 											<!--交易成功-->
 											<div class="order-status5">
 												<div class="order-title">
@@ -266,7 +266,7 @@
 																	</li>
 																	<li class="td td-operation">
 																		<div class="item-operation">
-																			<a href="refund.html?id={$d.id}">退款/退货</a>
+																			<a href="refunds.html?id={$d.id}">退款/退货</a>
 																		</div>
 																	</li>
 																</ul>
@@ -287,7 +287,7 @@
 																			<p class="order-info"><a href="#">延长收货</a></p>
 																		</div>
 																	</li>
-																	<li class="td td-change">
+																	<li class="td td-change" onclick="confirmre('{$d.id}')">
 																		<div class="am-btn am-btn-danger anniu">
 																			确认收货</div>
 																	</li>
@@ -404,7 +404,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html?id={$d.id}">退款</a>
+																	<a href="refunds.html?id={$d.id}">退款</a>
 																</div>
 															</li>
 														</ul>
@@ -688,7 +688,7 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 
-																	<a href="refund.html?id={$d.id}">退款/退货</a>
+																	<a href="refunds.html?id={$d.id}">退款/退货</a>
 
 																</div>
 															</li>
@@ -792,7 +792,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html?id={$d3.id}">退款/退货</a>
+																	<a href="refunds.html?id={$d3.id}">退款/退货</a>
 																</div>
 															</li>
 														</ul>
@@ -816,7 +816,7 @@
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
 															</li>
-															<li class="td td-change" >
+															<li class="td td-change" onclick="confirmre('{$d3.id}')" >
 																<div class="am-btn am-btn-danger anniu">
 																	确认收货</div>
 															</li>
@@ -899,7 +899,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="refunds.html?id={$d4.id}">退款/退货</a>
 																</div>
 															</li>
 														</ul>

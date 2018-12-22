@@ -255,18 +255,18 @@
     <script>
 		function pay() {
 
+//事件处理程序
+            var idobj = $(':checkbox:checked');//选中的id
 
+            var id =[];
+            //遍历idobj对象，获取其中的id
+            for (var i = 0; i < idobj.length; i++) {
+                id[i] =idobj[i].value;
+            }
 			if(id==""){
                 layer.msg('请勾选商品');
 			}else{
-                //事件处理程序
-                var idobj = $(':checkbox:checked');//选中的id
 
-                var id =[];
-                //遍历idobj对象，获取其中的id
-                for (var i = 0; i < idobj.length; i++) {
-                    id[i] =idobj[i].value;
-                }
 
                 var num=[];//每个商品数量
 				var color=[];//每个颜色

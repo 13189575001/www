@@ -153,7 +153,7 @@
 
 									<div class="order-main">
 										<div class="order-list">
-											<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i; if(($d["order_state"] == '0')): ?><!--交易成功-->
+											<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i; if(($d["evaluate"] == '1')): ?><!--交易成功-->
 											<div class="order-status5">
 												<div class="order-title">
 													<div class="dd-num">订单编号：<a href="javascript:;"><?php echo ($d["id"]); ?></a></div>
@@ -259,7 +259,7 @@
 																	</li>
 																	<li class="td td-operation">
 																		<div class="item-operation">
-																			<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
+																			<a href="refunds.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
 																		</div>
 																	</li>
 																</ul>
@@ -280,7 +280,7 @@
 																			<p class="order-info"><a href="#">延长收货</a></p>
 																		</div>
 																	</li>
-																	<li class="td td-change">
+																	<li class="td td-change" onclick="confirmre('<?php echo ($d["id"]); ?>')">
 																		<div class="am-btn am-btn-danger anniu">
 																			确认收货</div>
 																	</li>
@@ -393,7 +393,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款</a>
+																	<a href="refunds.html?id=<?php echo ($d["id"]); ?>">退款</a>
 																</div>
 															</li>
 														</ul>
@@ -667,7 +667,7 @@
 															<li class="td td-operation">
 																<div class="item-operation">
 
-																	<a href="refund.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
+																	<a href="refunds.html?id=<?php echo ($d["id"]); ?>">退款/退货</a>
 
 																</div>
 															</li>
@@ -767,7 +767,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html?id=<?php echo ($d3["id"]); ?>">退款/退货</a>
+																	<a href="refunds.html?id=<?php echo ($d3["id"]); ?>">退款/退货</a>
 																</div>
 															</li>
 														</ul>
@@ -791,7 +791,7 @@
 																	<p class="order-info"><a href="#">延长收货</a></p>
 																</div>
 															</li>
-															<li class="td td-change" >
+															<li class="td td-change" onclick="confirmre('<?php echo ($d3["id"]); ?>')" >
 																<div class="am-btn am-btn-danger anniu">
 																	确认收货</div>
 															</li>
@@ -870,7 +870,7 @@
 															</li>
 															<li class="td td-operation">
 																<div class="item-operation">
-																	<a href="refund.html">退款/退货</a>
+																	<a href="refunds.html?id=<?php echo ($d4["id"]); ?>">退款/退货</a>
 																</div>
 															</li>
 														</ul>
