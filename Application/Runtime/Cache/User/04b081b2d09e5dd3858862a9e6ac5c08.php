@@ -143,7 +143,7 @@ function tijao() {
         <div class="skill_left">
 
             <span style="display: block"><b><?php echo ($article["title"]); ?></b><p>发表于：<?php echo ($article["time"]); ?></p></span>
-            <span style="text-indent:20em; font-size:12px; padding: 20px 20px">  <?php echo ($article["content"]); ?></span>
+            <span style=" font-size:12px; padding: 20px 20px;display: block">  <?php echo ($article["content"]); ?></span>
            <!--评论留言-->
             <div class="evaluates">
                 <form method="post" id="forms">

@@ -39,7 +39,7 @@ class PublicController extends Controller{
         //清除session
         session(null);
         //跳转
-        $this->redirect('Public/login');
+        $this->redirect('Public/Login');
     }
     public function register(){
 

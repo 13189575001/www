@@ -1,0 +1,346 @@
+
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>首页</title>
+<link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/style.css"/>
+<link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/index.css"/>
+<script  src="__ADMIN__/js/jquery.min.js"></script>
+<!-- 动态菜单JS -->
+<script type="text/javascript"  src="__ADMIN__/js/menu.js"></script>
+</head>
+<script>
+    $(document).ready(function() {
+    $(function(){
+        $a=parseInt($(".he").html());
+
+        numPlus($(".money"),0.001)
+    });
+
+
+
+
+        var numPlus = function (obj, time) {
+            $(obj).html(1);
+
+            var dt = setInterval(function () {
+                if ($(obj).html() >= $a) {
+                    return;
+                }
+                $(obj).html(parseInt($(obj).html()) + 1)
+            }, time);
+            // if(parseInt($(obj).html())==$a){
+            //     clearInterval(dt);
+            // }
+
+        }
+    });
+
+
+
+</script>
+<body>
+<div class="container">
+ <div class="cont-top">
+  <div class="companyname">个性服饰后台管理</div>
+  <div class="cont-top-middle">
+   <ul>
+    <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon.png">
+      </div>
+       <div class="top-txt">购物单</div>
+     </a>
+    </li>
+    
+    <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+    
+     <li>
+     <a href="#">
+      <div class="top-middle">
+       <img src="__ADMIN__/img/icon1.png">
+      </div>
+      <div class="top-txt">收款单</div>
+     </a>
+    </li>
+   
+   </ul>
+  </div>
+  <div class="cont-top-rg">
+   <ul class="advanced-menu">
+    <li>
+     <div class="top-search">
+      <div class="t-s-l">
+       <span class="left-line"></span>
+       <input type="text" value="搜库存" class="search-type" disabled>
+       <span class="triangle-bottom"></span>
+      </div>
+      <div class="t-s-l">
+       <input type="text" placeholder="请输入商品编码或名称" class="search-dt" autocomplete="off"> 
+       <span class="right-line"></span>
+       <span class="right-icon"><img src="__ADMIN__/img/search-icon.png"></span>
+      </div>
+     </div>
+    </li>
+
+    <li class="default" style="position:relative;">
+     <span class="user"><img src="__ADMIN__/img/user.png"></span>
+     <a  href="#" class="special"> 小丫头<i><img src="__ADMIN__/img/xl.png"></i></a>
+     <div class="drop-down-wrap" style="width:180px;left:15px;display: none;">
+      <div class="drop-down">
+       <span class="triangle-border"></span>
+       <span class="triangle-bg"></span>
+       <ul class="del-ul">
+        <li><a href="#" class="hot">首耀照明</a></li>
+        <li><a href="#">小丫头</a></li>
+        <li><a href="#">操作日志</a></li>       
+       </ul>
+      </div>
+     </div>
+    </li>    
+   </ul>
+   <ul class="advanced-menu">
+    <li>
+     <a href="#"><img  src="__ADMIN__/img/top-icon1.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="__ADMIN__/img/top-icon2.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="__ADMIN__/img/top-icon3.png"></a>
+    </li>
+    <li>
+     <a href="#"><img  src="__ADMIN__/img/top-icon4.png"></a>
+    </li>
+    <li>
+     <a href="{:U('Login/logout')}"><img  src="__ADMIN__/img/top-icon5.png" onclick="return confirm('你确定要退出系统吗？')"></a>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="left-menu" style="height:949px;">
+  <div class="menu-list">
+   <ul>
+
+    
+    <li class="menu-list-02">
+     <a  href="{:U('Product/product')}">
+     <p class="fumenu">产品管理</p>
+     <img class="xiala" src="__ADMIN__/img/xiala.png" />
+     </a>
+     <div class="list-p">
+
+     </div>
+    </li>
+    
+    <li class="menu-list-01" >
+    <a href="{:U('Order/goods_order')}">
+     <p class="fumenu">订单管理</p>
+     <img class="xiala" src="__ADMIN__/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <p class="zcd" id="zcd8">下单账户</p>
+
+     </div>
+    </li>
+    
+    <li class="menu-list-01" >
+    <a href="{:U('User/user')}">
+     <p class="fumenu">客户管理</p>
+     <img class="xiala" src="__ADMIN__/img/xiala.png" />
+     </a>
+     <div class="list-p">
+
+     </div>
+    </li>
+    
+    <li class="menu-list-02">
+    <a href="#">
+     <p class="fumenu">员工管理</p>
+     <img class="xiala" src="__ADMIN__/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <a href="{:U('Manager/manager')}"><p class="zcd" >全部管理账号</p></a>
+     </div>
+    </li><li class="menu-list-02">
+    <a href="#">
+     <p class="fumenu">推文管理</p>
+     <img class="xiala" src="__ADMIN__/img/xiala.png" />
+     </a>
+     <div class="list-p">
+      <a href="{:U('Article/all_article')}"><p class="zcd" >全部推文</p></a>
+      <a href="{:U('Article/add_article')}"><p class="zcd" >发布推文</p></a>
+     </div>
+    </li>
+   </ul>
+  </div>
+ </div>
+ <div class="right-menu">
+  <div class="main-hd">
+   <div class="page-teb" style="height:887px;">
+    <div class="l-tab-links">
+     <ul style="left:0;">
+      <li class="l-select">
+       <a href="#" style="padding:0 25px;">首页</a>
+      </li>
+     </ul>
+    </div>
+    <div class="l-tab-content" style="height:851px;">
+     <div class="tab-content-item">
+      <div class="home">
+      <!--成交金额-->
+       <div class="space-style">
+        <div class="col-xs">
+         <a  href="#" class="title-button bg-deep">
+          <div class="carousel">
+           <div class="left-img">
+            <i><img src="__ADMIN__/img/left-img1.png"></i>
+            <p>成交金额</p>
+           </div>
+           <div class="right-info money">{$data2.total_money}</div>
+           <div class="he" style="display: none;">{$data2.total_money}</div>
+          </div>
+         </a>
+        </div>
+        
+         <div class="col-xs">
+         <a  href="#" class="title-button bg-red">
+          <div class="carousel">
+           <div class="left-img bg-color-red">
+            <i><img src="__ADMIN__/img/left-img2.png"></i>
+            <p>订单</p>
+           </div>
+           <div class="right-info">{$data2.orders}</div>
+          </div>
+         </a>
+        </div>
+        
+         <div class="col-xs">
+         <a  href="#" class="title-button bg-green">
+          <div class="carousel">
+           <div class="left-img bg-color-green">
+            <i><img src="__ADMIN__/img/left-img3.png"></i>
+            <p>通知</p>
+           </div>
+           <div class="right-info">125条</div>
+          </div>
+         </a>
+        </div>
+        
+         <div class="col-xs">
+         <a  href="#" class="title-button bg-orange">
+          <div class="carousel">
+           <div class="left-img bg-color-orange">
+            <i><img src="__ADMIN__/img/left-img4.png"></i>
+            <p>待处理</p>
+           </div>
+           <div class="right-info">10条</div>
+          </div>
+         </a>
+        </div>
+
+       </div>
+       
+
+       
+       <!--销售情况-->
+       <div class="order-form">
+        <div class="col-xs-3 col-lg-7">
+         <div class="admin-info">
+          <div class="title-name">
+           <i></i>
+            登录记录
+           <a href="#">+更多</a>
+          </div>
+          <table class="record-list">
+           <tbody>
+         <volist name="data" id="m">
+            <tr>
+             <td>{$m.adminuser}</td>
+             <td>{$m.admin}</td>
+             <td>{$m.logindate}</td>
+            </tr>
+         </volist>
+           </tbody>
+          </table>
+         </div>
+        </div>
+        
+        <div class="col-xs-6 ranking-style">
+         <div class="frame">
+          <div class="title-name">
+            <i></i>
+            商品销售排行
+           <a href="#">+更多</a>
+          </div>
+          <table class="table table-list">
+           <thead>
+            <tr>
+             <th width="50">排名</th>
+             <th>商品编号</th>
+             <th>商品名称</th>
+             <th width="80">销售数量</th>
+            </tr>
+           </thead>
+           <tbody>
+        <volist name="ranking" id="r">
+            <tr>
+             <td>
+              <em>{$r.r}</em>
+             </td>
+             <td>{$r.pid}</td>
+             <td><a href="#">{$r[text].text}</a></td>
+             <td>{$r.num}</td>
+            </tr>
+        </volist>
+
+           </tbody>
+          </table>
+         </div>
+        </div>
+       </div>
+      </div>
+     </div>
+    </div>
+   </div>
+  </div>
+ </div>
+</div>
+</body>
+</html>

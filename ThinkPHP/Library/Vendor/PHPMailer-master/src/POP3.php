@@ -157,7 +157,7 @@ class POP3
 
     /**
      * Authenticate with a POP3 server.
-     * A connect, login, disconnect sequence
+     * A connect, Login, disconnect sequence
      * appropriate for POP-before SMTP authorisation.
      *
      * @param string   $host        The hostname to connect to
@@ -199,7 +199,7 @@ class POP3
                 return true;
             }
         }
-        // We need to disconnect regardless of whether the login succeeded
+        // We need to disconnect regardless of whether the Login succeeded
         $this->disconnect();
 
         return false;

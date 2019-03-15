@@ -102,8 +102,8 @@
 								<?php if(is_array($data)): $i = 0; $__LIST__ = $data;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d): $mod = ($i % 2 );++$i;?><ul class="item-content " num="2222">
 
 										<div class="cart-checkbox clearfix ">
-											<input class="check" id="J_CheckBox_<?php echo ($d["id"]); ?>" name="<?php echo ($d["id"]); ?>" onclick="checkboxOnclick(this,'<?php echo ($d["price"]); ?>','<?php echo ($d["id"]); ?>')" value="<?php echo ($d["id"]); ?>" type="checkbox">
-											<input class="hiddencheck"  name="<?php echo ($d["uid"]); ?>" value="<?php echo ($d["uid"]); ?>" type="hidden">
+											<input class="check" id="J_CheckBox_<?php echo ($d["pid"]); ?>" rel="<?php echo ($d["id"]); ?>" name="<?php echo ($d["pid"]); ?>" onclick="checkboxOnclick(this,'<?php echo ($d["price"]); ?>','<?php echo ($d["id"]); ?>')" value="<?php echo ($d["pid"]); ?>" type="checkbox">
+											<input class="hiddencheck"  name="<?php echo ($d["id"]); ?>" value="<?php echo ($d["id"]); ?>" type="hidden">
 											<label for="J_CheckBox_170769542747"></label>
 										</div>
 									</li>
@@ -126,13 +126,13 @@
 											<div class="guige" style="" >
 												<div class="allocate_list" >
 												<span class="name" >颜色:</span>
-													<select name="color" id="color<?php echo ($d["id"]); ?>" >
+													<select name="color" id="color<?php echo ($d["pid"]); ?>" >
 														<option value="<?php echo ($d["color"]); ?>"  selected="selected" ><?php echo ($d["color"]); ?></option>
 													</select>
 												</div>
 												<div class="allocate_list">
 													<span class="name">尺码:</span>
-													<select name="measure" id="measure<?php echo ($d["id"]); ?>">
+													<select name="measure" id="measure<?php echo ($d["pid"]); ?>">
 														<option value="<?php echo ($d["measure"]); ?>"  selected="selected"><?php echo ($d["measure"]); ?></option>
 														<option>M</option>
 														<option>L</option>
@@ -166,7 +166,7 @@
 											<div class="item-amount ">
 												<div class="sl">
 													<input class="min am-btn" name="" type="button" onClick="subtracts('<?php echo ($d["id"]); ?>','<?php echo ($d["price"]); ?>')" value="-" />
-													<input class="text_box" id="text_box<?php echo ($d["id"]); ?>"  type="text" value="<?php echo ($d["num"]); ?>" style="width:30px;" readonly="readonly" />
+													<input class="text_box<?php echo ($d["pid"]); ?>" id="text_box<?php echo ($d["id"]); ?>"  type="text" value="<?php echo ($d["num"]); ?>" style="width:30px;" readonly="readonly" />
 													<input class="add am-btn"  name="" onClick="add('<?php echo ($d["id"]); ?>','<?php echo ($d["price"]); ?>')" type="button" value="+" />
 
 												</div>
@@ -203,7 +203,7 @@
 						<!--<span>全选</span>-->
 					<!--</div>-->
 					<div class="operations">
-						<a href="#" hidefocus="true" class="deleteAll" onclick="deleteGoods('')">删除</a>
+						<a href="#" hidefocus="true" class="deleteAll" onclick="deleteGoods()">删除</a>
 						<a href="#" hidefocus="true" class="J_BatchFav">移入收藏夹</a>
 					</div>
 					<div class="float-bar-right">
@@ -260,6 +260,7 @@
             for (var i = 0; i < idobj.length; i++) {
                 id[i] =idobj[i].value;
             }
+            //alert(id);
 			if(id==""){
                 layer.msg('请勾选商品');
 			}else{
@@ -268,18 +269,21 @@
                 var num=[];//每个商品数量
 				var color=[];//每个颜色
 				 var measure=[];//每个尺寸
+				 var sid=[];//每个尺寸
                 for(i in id){
-                    num[i]= $("#text_box"+id[i]).val();
+                    sid[i]=$('#J_CheckBox_'+id[i]).attr('rel');
+                    num[i]= $(".text_box"+id[i]).val();
                     color[i]= $("#color"+id[i]+" option:selected").val();
                     measure[i]= $("#measure"+id[i]+" option:selected").val();
                 }
                 //alert(color);alert(measure);
-
+                //alert(sid);
 
                 $.ajax({
                     type: "POST",
 
                     data: {
+                        sid:sid,
                         pid:id,
 						num:num,
 						color:color,
@@ -287,11 +291,11 @@
 					},
 					url: "<?php echo U('shopcart');?>",
                     success:function (re) {
-
+                        alert(JSON.stringify(re))
 
                     }
                 });
-                window.location.href="/Fashionmall/index.php/Order/pay";
+               window.location.href="<?php echo U('Order/pay');?>";
 
 
 			}

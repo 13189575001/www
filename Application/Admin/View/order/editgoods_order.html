@@ -1,0 +1,211 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>弹窗-添加管理</title>
+
+<style>
+html,body,div,span,ul,li,h1,h2,h3,h4,p,a,img,input,form{margin:0;padding:0;border:0;list-style:none;outline:0;}
+div,td,ul,li,dl,dt,dd,h2,h3,h4{list-style:none;margin:0;padding:0;}
+div{display:block;}
+body{font-size:12px;font-family:"微软雅黑", "宋体", Arial;color:#666;}
+li{display:list-item;text-align:-webkit-match-praent;}
+img{vertical-align:middle;}
+em{font-style:normal;color:#fff;}
+input, textarea, select, button { font-family: inherit; font-size: 100%; outline:0;}
+a img{border:0}
+body{color:#333;font:12px "微软雅黑";}
+ul, ol, li{list-style-type:none;vertical-align:0}
+a{outline-style:none;color:#535353;text-decoration:none;cursor:pointer}
+a:hover{text-decoration:none;}
+.clear{height:0;overflow:hidden;clear:both}
+i,s{text-decoration:none;font-style:normal;}
+
+
+.formoverlay{cursor:default;width:1419px;height:949px;z-index:5;opacity:0.5;background:#999;position:absolute;left:0;top:0;width:100%;height:100%;display: block;}
+.formborder{border:1px solid #476f9a;}
+.formcap{color:#fff;background:#476f9a;}
+td{font-size:12px;line-height:18px;}
+.form-cap-label{padding:3px 0 0 4px;height:30px;cursor:default;}
+.form-cap-txt{font-size:14px;text-indent:5px;letter-spacing:1px;}
+.formcap-btn{padding-right:5px;}
+.formcap-btn a img{width:15px;height:15px;}
+
+.layoutitem{width:840px;border:1px solid #ddd;margin:15px  auto;}
+.layout-tit{height:30px;background:#eee;line-height:30px;padding-left:8px;}
+.layout-xx{padding:8px;}
+.layout-xx li{height:40px;line-height:40px;margin-bottom:5px;display:block;overflow:hidden;}
+.item-input{float:left;overflow:hidden;display:inline-block;width:50%;}
+.item-label{width:68px;line-height:40px;display:inline-block;text-align:right;}
+.layoutitemcon{width:235px;background:#fff;height:24px;line-height:24px;border:1px solid #c9c9c9;text-indent:5px;margin-left:8px;}
+
+.layoutitem-add{float:right;padding-right:15px;}
+.layoutitem-add a{width:45px;height:24px;line-height:24px;margin:12px 8px ;display:inline-block;padding:2px 3px;}
+.add{background:#ff0303;color:#fff;border-radius:3px;text-align:center;}
+
+.tc{background:#333;border-radius:3px;text-align:center;color:#fff;}
+</style>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/style.css"/>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/index.css"/>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/shelves.css"/>
+    <link  type="text/css" rel="stylesheet"  href="__USER__/js/layui/css/layui.css"/>
+
+    <script  src="__USER__/js/jquery.js"></script>
+    <script  src="__USER__/js/jquery.all.js"></script>
+    <script  src="__USER__/js/layui/layui.js"></script>
+    <script  src="__USER__/js/layui/layui.all.js"></script>
+
+    <!-- 动态菜单JS -->
+    <script type="text/javascript"  src="__ADMIN__/js/menu.js"></script>
+</head>
+<script>
+    layui.use('form', function(){
+        var form = layui.form;
+        form.on('submit(formDemo)', function(data){
+            // layer.alert(JSON.stringify(data.field), {
+            //     title: '最终的提交信息'
+            // });
+            $.ajax({
+                type:"POST",
+                url: "{:U('Order/editgoods_order')}",
+                // contentType: "application/json", //如果提交的是json数据类型，则必须有此参数,表示提交的数据类型
+                //dataType: "json", //表示返回值类型，不必须
+                data: data.field,
+                success: function (jsonResult) {
+                   if(jsonResult){
+                       layer.msg('修改成功');
+                   }else{
+                       //layer.msg('修改失败');
+                   }
+
+                },
+
+            });
+            return false;
+        });
+
+
+    });
+
+    // $(document).ready(function () {
+    //     $('.delimg').click(function () {
+    //         var info = $(this).attr("rel");
+    //         //layer.msg(info)
+    //         $.post('{:U("Product/delFile")}',{info:info},function (result) {
+    //             //alert(JSON.stringify(result));
+    //             if(result){
+    //                 alert('删除成功');
+    //                 window.location.reload();
+    //
+    //             }else{
+    //                 layer.msg('删除失败');
+    //             }
+    //
+    //         })
+    //
+    //     })
+    //
+    // })
+
+
+</script>
+<body>
+
+
+<!--<div class="formoverlay"></div>-->
+ <table cellpadding="0" cellspacing="0" border="0" class="formborder">
+  <tbody>
+
+   <tr>
+   <td align="left" valign="top" style="width:880px;height:579px;background:#fff;">
+    <div class="formcontentsize" style="width:auto;height:auto;">
+     <!--仓库基本信息   开始-->
+        <form method="post" enctype="multipart/form-data" class="layui-form demo1">
+     <div class="layoutitem">
+      <div class="layout-tit">
+       订单修改
+      </div>
+
+      <div class="layout-xx">
+    <volist name="data" id="d">
+       <ul>
+
+
+        <li>
+            <div class="layui-form-item">
+                <div class="layui-inline">
+                    <label class="layui-form-label">订单编号</label>
+                    <div class="layui-input-inline">
+                        <input type="text" name="id" lay-verify="required" value="{$d.id}"  disabled="true" class="layui-input">
+                        <!--<input type="tel" name="classfiy" lay-verify="required" autocomplete="true" class="layui-input" >-->
+                    </div>
+                </div>
+
+            </div>
+        </li>
+
+         <li>
+
+             <div class="layui-form-item">
+                 <div class="layui-inline">
+                     <label class="layui-form-label">收货人</label>
+                     <div class="layui-input-inline">
+
+                                 <input type="text" value="{$d.name}" name="name" lay-verify="required"  class="layui-input" >
+
+
+                     </div>
+                 </div>
+
+             </div>
+        </li>
+           <li>
+               <div class="layui-form-item">
+                   <div class="layui-inline">
+                       <label class="layui-form-label">电话</label>
+                       <div class="layui-input-inline">
+
+                               <input type="text"  value="{$d.tel}" name="tel" lay-verify="required|phone"  class="layui-input" >
+
+                       </div>
+
+                   </div>
+
+               </div>
+
+           </li>
+         <li>
+             <div class="layui-form-item">
+                 <label class="layui-form-label">地址</label>
+                 <div class="layui-input-block">
+                     <textarea name="address" required lay-verify="required"  class="layui-textarea">{$d.address}</textarea>
+                     <!--<input type="text" name="address" lay-verify="title" autocomplete="off" value="{$d.address}" class="layui-input">-->
+                 </div>
+             </div>
+
+         </li>
+
+
+       </ul>
+    </volist>
+      </div>
+             <div class="layoutitem-add">
+             <!--<a href="#" class="add"><input type="submit" class="add" value="修改"  ></a>-->
+                 <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+
+             <!--<a href="javascript:;" class="tc">退出</a>-->
+         </div>
+
+     </div>
+
+</form>
+    </div>
+   </td>
+   </tr>
+  </tbody>
+ </table>
+       <!--添加员工-->
+
+
+</body>
+</html>

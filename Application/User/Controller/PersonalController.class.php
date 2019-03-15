@@ -8,11 +8,10 @@
 
 namespace User\Controller;
 use Org\Util\ArrayList;
-use function Sodium\add;
 use Think\Controller;
 use User\Model\ShoppingcartModel;
 
-class PersonalController extends LoginControllrt {
+class PersonalController extends LoginController {
     //购物车
     public function shopcart(){
         $status=0;
@@ -29,11 +28,10 @@ class PersonalController extends LoginControllrt {
         $this->assign('data',$data);
         if(IS_POST){
             $post=I('post.');
+           // $this->ajaxReturn($post);
             $a=[];
             $b=[];
-
             $a['uid']=session(id);
-
 
             $x=1;
             $result="";
@@ -41,13 +39,15 @@ class PersonalController extends LoginControllrt {
                 if($i>count($post['pid'])){
                     break;
                 }
-                $b['id'] = $post['pid'][$i];
-                $a['pid'] = $data[$i]['pid'];
+                $b['id'] = $post['sid'][$i];
+                $a['pid'] = $post['pid'][$i];
                 $a['num'] = $post['num'][$i];
                 $a['color'] = $post['color'][$i];
                 $a['measure'] = $post['measure'][$i];
                 $a['status']=0;
+               // $this->ajaxReturn($b);
                 $result=D('wconfirmoder')->add($a);
+                //$this->ajaxReturn($result);
                 $result2=D('shoppingcart')->where($b)->delete();
 
 

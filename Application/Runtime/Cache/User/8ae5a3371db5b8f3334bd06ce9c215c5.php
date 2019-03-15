@@ -121,12 +121,12 @@
   <!--分类-->
   <div class="classify">
     <div class="classify-center">
-      <dl class="classifys-items">
+      <dl class="classifys-items" style="width: 100%">
         <dt>分类:</dt>
         <dd class="act"  >
           <a href="<?php echo U('AllGood');?>" >全部</a>
         </dd>
-        <?php if(is_array($data2)): $i = 0; $__LIST__ = $data2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d2): $mod = ($i % 2 );++$i;?><dd class="act" ><a href="<?php echo U('AllGood');?>?cid=<?php echo ($d2["id"]); ?>" ><?php echo ($d2["classify"]); ?></a></dd><?php endforeach; endif; else: echo "" ;endif; ?>
+        <?php if(is_array($data2)): $i = 0; $__LIST__ = $data2;if( count($__LIST__)==0 ) : echo "" ;else: foreach($__LIST__ as $key=>$d2): $mod = ($i % 2 );++$i;?><dd class="act" ><a href="<?php echo U('Index/AllGood');?>?cid=<?php echo ($d2["id"]); ?>" ><?php echo ($d2["classify"]); ?></a></dd><?php endforeach; endif; else: echo "" ;endif; ?>
       </dl>
     </div>
   </div>

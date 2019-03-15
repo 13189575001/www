@@ -218,7 +218,7 @@
 						<ul>
 							<li> <a href="collection.html">收藏</a></li>
 							<li> <a href="foot.html">足迹</a></li>
-							<li> <a href="comment.html">评价</a></li>
+							<li> <a href="<?php echo U('Order/comment');?>">评价</a></li>
 							<li> <a href="news.html">消息</a></li>
 						</ul>
 					</li>

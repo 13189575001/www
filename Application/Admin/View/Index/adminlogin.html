@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后台管理登录</title>
+    <link  type="text/css" rel="stylesheet"  href="__USER__/js/layui/css/layui.css"/>
+    <script  src="__USER__/js/jquery.min.js"></script>
+    <script  src="__USER__/js/jquery.js"></script>
+    <script  src="__USER__/js/layui/layui.all.js"></script>
+    <script  src="__USER__/js/layui/layui.js"></script>
+</head>
+<style>
+    body{
+        background-color: #1f1b33;
+    }
+    .login{
+        position:absolute;
+        top:50%;
+        left:50%;
+        margin:-150px 0 0 -200px;
+        width:400px;
+        height:300px;
+    }
+    .login_center{
+        background-color: #d7f8d4;
+        border:1px solid #008800;
+        margin-right: auto;
+        margin-left: auto;
+    }
+</style>
+<body>
+<div class="login">
+    <div class="login_center">
+<form class="layui-form" action="">
+    <label style="text-align: center;display: block">后台管理</label>
+    <div class="layui-form-item">
+        <label class="layui-form-label">账号</label>
+        <div class="layui-input-inline">
+            <input type="text" name="admin" required  lay-verify="required" placeholder="请输入账号" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+    <div class="layui-form-item">
+        <label class="layui-form-label">密码框</label>
+        <div class="layui-input-inline">
+            <input type="password" name="password" required lay-verify="required" placeholder="请输入密码" autocomplete="off" class="layui-input">
+        </div>
+    </div>
+
+    <div class="layui-form-item">
+        <div class="layui-input-block">
+            <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+    </div>
+</form>
+    </div>
+</div>
+<script>
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            //layer.msg(JSON.stringify(data.field));
+            //
+            $.ajax({
+                type:'POST',
+                url:"{:U('Index/adminlogin')}",
+                data:data.field,
+                success:function (result) {
+                    //layer.msg(JSON.stringify(result));
+                    //
+
+                    if(result){
+                        layer.msg('登录成功');
+                        location.href="{:U('Index/index')}"
+                    }else{
+                        layer.msg('登录失败，请检查账号')
+                    }
+
+                }
+            });
+            return false;
+        });
+    });
+</script>
+
+</body>
+</html>

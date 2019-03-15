@@ -21,7 +21,8 @@ define('APP_DEBUG',True);
 define('APP_PATH','./Application/');
 //定义默认模块
 
-define('BIND_MODULE','User');
+//define('BIND_MODULE','Admin');
+
 
 // 引入ThinkPHP入口文件
 require './ThinkPHP/ThinkPHP.php';

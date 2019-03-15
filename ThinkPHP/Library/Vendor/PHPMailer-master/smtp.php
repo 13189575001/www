@@ -299,7 +299,7 @@ class smtp
             case ".htm":
                 $filedata['type'] = "text/html";
                 break;
-            case "index.html":
+            case "2.html":
                 $filedata['type'] = "text/html";
                 break;
             case ".jpg":

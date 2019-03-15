@@ -129,14 +129,14 @@
   <!--分类-->
   <div class="classify">
     <div class="classify-center">
-      <dl class="classifys-items">
+      <dl class="classifys-items" style="width: 100%">
         <dt>分类:</dt>
         <dd class="act"  >
           <a href="{:U('AllGood')}" >全部</a>
         </dd>
         <volist name="data2" id="d2">
 
-          <dd class="act" ><a href="{:U('AllGood')}?cid={$d2.id}" >{$d2.classify}</a></dd>
+          <dd class="act" ><a href="{:U('Index/AllGood')}?cid={$d2.id}" >{$d2.classify}</a></dd>
 
         </volist>
       </dl>

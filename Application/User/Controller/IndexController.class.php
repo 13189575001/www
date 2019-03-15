@@ -7,6 +7,7 @@
  */
 //声明空间
 namespace User\Controller;
+
 use User\Model\ShoppingcartModel;//引入自定义模型
 //引入父类
 use Think\Controller;
@@ -27,9 +28,9 @@ use Think\Controller;
              $this->assign('shopcart',$shopcart);
              //实例化模式
              $model=D('product_cate');
-             $data=$model->group('id,img')->select();
-             $data2=D('product')->where("identify='一周穿搭'")->select();
-             $data3=D('product')->order('id desc')->select();
+             $data=$model->group('id,img')->limit(8)->where("status= 1")->select();
+             $data2=D('product')->where("identify='一周穿搭'AND status= 1")->select();
+             $data3=D('product')->order('id desc')->where("status= 1")->select();
              $this->assign('data',$data);
              $this->assign('data2',$data2);
              $this->assign('data3',$data3);
@@ -57,6 +58,7 @@ use Think\Controller;
                  $cid=I('get.');
 
              $cid['keywords'] = array("LIKE", '%' .$cid['keywords'] . '%');
+             $cid['status']=1;
              $count = $model->where($cid)->count();
              $Page = new \Think\Page($count, 5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
              $show = $Page->show();// 分页显示输出
@@ -67,12 +69,12 @@ use Think\Controller;
              $this->assign('show', $show);
              $this->assign('data',$data);
          }else{
-             $count = $model->count();
+             $count = $model->where('status=1')->count();
              $Page = new \Think\Page($count, 5);// 实例化分页类 传入总记录数和每页显示的记录数(25)
              $show = $Page->show();// 分页显示输出
              // 进行分页数据查询 注意limit方法的参数要使用Page类的属性
 
-             $data = $model->limit($Page->firstRow . ',' . $Page->listRows)->select();
+             $data = $model->limit($Page->firstRow . ',' . $Page->listRows)->where('status=1')->select();
              $this->assign('count', $count);
              $this->assign('show', $show);
              $this->assign('data',$data);
@@ -86,7 +88,7 @@ use Think\Controller;
 
              //$this->assign('data',$data);
 
-             $data2=D('product_cate')->select();
+             $data2=D('product_cate')->where('status=1')->select();//
 
              $this->assign('data2',$data2);
              $this->assign('status',$status);
@@ -106,10 +108,12 @@ use Think\Controller;
                  $post['aid']=$get['aid'];
 
                  $article=$model->where($get)->find();
-
+                 $article['content']=html_entity_decode($article['content']);
              }else{
                  $article=$model->order('aid desc')->find();
                  $post['aid']=$article['aid'];
+                 $article['content']=html_entity_decode($article['content']);
+
              }
              $model=D('art_evaluate');
              $evaluate=$model->order('id desc')->where($post)->select();
@@ -122,7 +126,7 @@ use Think\Controller;
 //                     $model->create();
 //                     $res = $model->add($post);
 //                 }else{
-//                     $this->redirect('Public/login');
+//                     $this->redirect('Public/Login');
 //                 }
 //             }
 
@@ -149,7 +153,7 @@ use Think\Controller;
                      }
                  }else{
                      $this->ajaxReturn(0);
-                     //$this->redirect('Public/login');
+                     //$this->redirect('Public/Login');
                  }
              }
          }

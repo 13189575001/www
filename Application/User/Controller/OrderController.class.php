@@ -9,7 +9,7 @@
 namespace User\Controller;
 use Think\Controller;
 
-class OrderController extends LoginControllrt
+class OrderController extends LoginController
 {
     public function pay(){
 
@@ -154,7 +154,7 @@ class OrderController extends LoginControllrt
             // 上传文件
               $info   =  $upload->upload();
               //存数据库
-            $file['img']='evaluate_img/'.$info[0]['savename'];;
+            $file['img']='evaluate_img/'.$info[0]['savename'];
             $file['uid']=session(id);
             $file['date']=date('Y-m-d H:i:s');
             D('evaluate')->add($file);

@@ -117,13 +117,14 @@ function getGoodcolor(pid)
         data: {
             pid:pid
         },
-        url: "/Fashionmall/index.php/Personal/returncolor",
+        url: "/Fashionmall/index.php/User/Personal/returncolor",
         //dataType:"json",
         success: function(result){
+           // alert(JSON.stringify(result));
             var dataObj = result; //返回的result为json格式的数据
             $.each(dataObj,function (index, val) {
-                //console.log(val.color);
-                $("#"+pid).append("<option value='"+val.color+"'>"+val.color+"</option>");//遍历出color
+               // console.log(val.color);
+                $("#color"+pid).append("<option value='"+val.color+"'>"+val.color+"</option>");//遍历出color
             })
         }
     });
@@ -155,7 +156,7 @@ function deleteGoods(id) {
                 data: {
                     sid: id
                 },
-                url: "/Fashionmall/index.php/Personal/del.html",
+                url: "/Fashionmall/index.php/User/Personal/del.html",
                 //dataType:"json",
                 success: function (result) {
                     //alert(JSON.stringify(result));

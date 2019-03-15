@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>添加推文</title>
+    <link  type="text/css" rel="stylesheet"  href="__USER__/js/layui/css/layui.css"/>
+    <script  src="__USER__/js/jquery.min.js"></script>
+    <script  src="__USER__/js/jquery.js"></script>
+    <script  src="__USER__/js/layui/layui.js"></script>
+    <script  src="__USER__/js/layui/layui.all.js"></script>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/style.css"/>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/index.css"/>
+    <!-- 动态菜单JS -->
+    <script type="text/javascript"  src="__ADMIN__/js/menu.js"></script>
+
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <script type="text/javascript" charset="utf-8" src="__ADMIN__/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="__ADMIN__/ueditor/ueditor.all.min.js"> </script>
+    <!--建议手动加在语言，避免在ie下有时因为加载语言失败导致编辑器加载失败-->
+    <!--这里加载的语言文件会覆盖你在配置项目里添加的语言类型，比如你在配置项目里配置的是英文，这里加载的中文，那最后就是中文-->
+    <script type="text/javascript" charset="utf-8" src="__ADMIN__/ueditor/lang/zh-cn/zh-cn.js"></script>
+
+</head>
+<body>
+<div class="container">
+    <div class="cont-top">
+        <div class="companyname">个性服饰后台管理</div>
+        <div class="cont-top-middle">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon.png">
+                        </div>
+                        <div class="top-txt">购物单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cont-top-rg">
+            <ul class="advanced-menu">
+                <li>
+                    <div class="top-search">
+                        <div class="t-s-l">
+                            <span class="left-line"></span>
+                            <input type="text" value="搜库存" class="search-type" disabled>
+                            <span class="triangle-bottom"></span>
+                        </div>
+                        <div class="t-s-l">
+                            <input type="text" placeholder="请输入商品编码或名称" class="search-dt" autocomplete="off">
+                            <span class="right-line"></span>
+                            <span class="right-icon"><img src="__ADMIN__/img/search-icon.png"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="default" style="position:relative;">
+                    <span class="user"><img src="__ADMIN__/img/user.png"></span>
+                    <a  href="#" class="special"> 小丫头<i><img src="__ADMIN__/img/xl.png"></i></a>
+                    <div class="drop-down-wrap" style="width:180px;left:15px;display: none;">
+                        <div class="drop-down">
+                            <span class="triangle-border"></span>
+                            <span class="triangle-bg"></span>
+                            <ul class="del-ul">
+                                <li><a href="#" class="hot">首耀照明</a></li>
+                                <li><a href="#">小丫头</a></li>
+                                <li><a href="#">操作日志</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="advanced-menu">
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon1.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon2.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon3.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon4.png"></a>
+                </li>
+                <li>
+                    <a href="{:U('Login/logout')}"><img  src="__ADMIN__/img/top-icon5.png" onclick="return confirm('你确定要退出系统吗？')"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="left-menu" style="height:949px;">
+        <div class="menu-list">
+            <ul>
+
+
+                <li class="menu-list-02">
+                    <a  href="{:U('Product/product')}">
+                        <p class="fumenu">产品管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+
+                    </div>
+                </li>
+
+                <li class="menu-list-01" >
+                    <a href="{:U('Order/goods_order')}">
+                        <p class="fumenu">订单管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+                        <p class="zcd" id="zcd8">下单账户</p>
+
+                    </div>
+                </li>
+
+                <li class="menu-list-01" >
+                    <a href="{:U('User/user')}">
+                        <p class="fumenu">客户管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+
+                    </div>
+                </li>
+
+                <li class="menu-list-02">
+                    <a href="#">
+                        <p class="fumenu">员工管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+                        <a href="{:U('Manager/manager')}"><p class="zcd" >全部管理账号</p></a>
+                    </div>
+                </li><li class="menu-list-02">
+                <a href="#">
+                    <p class="fumenu">推文管理</p>
+                    <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                </a>
+                <div class="list-p">
+                    <a href="{:U('Article/all_article')}"><p class="zcd" >全部推文</p></a>
+                    <a href="{:U('Article/add_article')}"><p class="zcd" >发布推文</p></a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="main-hd">
+            <div class="page-teb" style="height:auto;">
+                <div class="l-tab-links">
+                    <ul style="left:0;">
+                        <li class="l-select">
+                            <a href="{:U('Index/index')}" style="padding:0 25px;">首页</a>
+                        </li>
+                    </ul>
+                </div>
+                        <form class="layui-form" action="" style="background-color: #ffffff">
+                            <volist name="data" id="d">
+                            <div class="layui-form-item">
+                                <label class="layui-form-label">文章标题</label>
+                                <div class="layui-input-block">
+                                    <input type="text" name="title" required  lay-verify="required" value="{$d.title}" placeholder="请输入标题" autocomplete="off" class="layui-input">
+                                    <input type="hidden" name="aid" required  lay-verify="required" value="{$d.aid}">
+                                </div>
+                            </div>
+                            <div class="layui-form-item layui-form-text">
+                                <label class="layui-form-label">文本域</label>
+                                <div class="layui-input-block">
+                                    <!--<textarea name="desc" placeholder="请输入内容" class="layui-textarea">-->
+
+                                    <!--</textarea>-->
+                                    <script id="editor" type="text/plain" style="width:1024px;height:500px;"></script>
+                                </div>
+                            </div>
+                            <div class="layui-form-item">
+                                <div class="layui-input-block">
+                                    <button class="layui-btn" lay-submit lay-filter="formDemo">立即提交</button>
+                                    <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+                                </div>
+                            </div>
+
+                             </volist>
+                        </form>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+                                    </div>
+
+<script>
+          $(function(){
+              var ue = UE.getEditor('editor');
+              var content =$('#daily_content').val();
+              //判断ueditor 编辑器是否创建成功
+              ue.addListener("ready", function () {
+                  // editor准备好之后才可以使用
+                  ue.setContent('{$data[0][content]}');
+
+              });
+          });
+
+
+
+    //Demo
+    layui.use('form', function(){
+        var form = layui.form;
+
+        //监听提交
+        form.on('submit(formDemo)', function(data){
+            // layer.msg(JSON.stringify(data.field));
+
+            $.ajax({
+                type:"POST",
+                url: "{:U('Article/edit_article')}",
+                // contentType: "application/json", //如果提交的是json数据类型，则必须有此参数,表示提交的数据类型
+                //dataType: "json", //表示返回值类型，不必须
+                data: data.field,
+                success: function (jsonResult) {
+                    layer.msg(JSON.stringify(jsonResult));
+                    if(jsonResult){
+
+                        //layer.msg('修改成功');
+
+                    }else{
+                       // layer.msg('修改失败');
+                    }
+
+                },
+
+            });
+            return false;
+
+        });
+    });
+</script>
+</body>
+</html>

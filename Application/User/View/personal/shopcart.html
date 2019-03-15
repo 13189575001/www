@@ -104,8 +104,8 @@
                                <ul class="item-content " num="2222">
 
 										<div class="cart-checkbox clearfix ">
-											<input class="check" id="J_CheckBox_{$d.id}" name="{$d.id}" onclick="checkboxOnclick(this,'{$d.price}','{$d.id}')" value="{$d.id}" type="checkbox">
-											<input class="hiddencheck"  name="{$d.uid}" value="{$d.uid}" type="hidden">
+											<input class="check" id="J_CheckBox_{$d.pid}" rel="{$d.id}" name="{$d.pid}" onclick="checkboxOnclick(this,'{$d.price}','{$d.id}')" value="{$d.pid}" type="checkbox">
+											<input class="hiddencheck"  name="{$d.id}" value="{$d.id}" type="hidden">
 											<label for="J_CheckBox_170769542747"></label>
 										</div>
 									</li>
@@ -128,13 +128,13 @@
 											<div class="guige" style="" >
 												<div class="allocate_list" >
 												<span class="name" >颜色:</span>
-													<select name="color" id="color{$d.id}" >
+													<select name="color" id="color{$d.pid}" >
 														<option value="{$d.color}"  selected="selected" >{$d.color}</option>
 													</select>
 												</div>
 												<div class="allocate_list">
 													<span class="name">尺码:</span>
-													<select name="measure" id="measure{$d.id}">
+													<select name="measure" id="measure{$d.pid}">
 														<option value="{$d.measure}"  selected="selected">{$d.measure}</option>
 														<option>M</option>
 														<option>L</option>
@@ -168,7 +168,7 @@
 											<div class="item-amount ">
 												<div class="sl">
 													<input class="min am-btn" name="" type="button" onClick="subtracts('{$d.id}','{$d.price}')" value="-" />
-													<input class="text_box" id="text_box{$d.id}"  type="text" value="{$d.num}" style="width:30px;" readonly="readonly" />
+													<input class="text_box{$d.pid}" id="text_box{$d.id}"  type="text" value="{$d.num}" style="width:30px;" readonly="readonly" />
 													<input class="add am-btn"  name="" onClick="add('{$d.id}','{$d.price}')" type="button" value="+" />
 
 												</div>
@@ -206,7 +206,7 @@
 						<!--<span>全选</span>-->
 					<!--</div>-->
 					<div class="operations">
-						<a href="#" hidefocus="true" class="deleteAll" onclick="deleteGoods('')">删除</a>
+						<a href="#" hidefocus="true" class="deleteAll" onclick="deleteGoods()">删除</a>
 						<a href="#" hidefocus="true" class="J_BatchFav">移入收藏夹</a>
 					</div>
 					<div class="float-bar-right">
@@ -263,6 +263,7 @@
             for (var i = 0; i < idobj.length; i++) {
                 id[i] =idobj[i].value;
             }
+            //alert(id);
 			if(id==""){
                 layer.msg('请勾选商品');
 			}else{
@@ -271,18 +272,21 @@
                 var num=[];//每个商品数量
 				var color=[];//每个颜色
 				 var measure=[];//每个尺寸
+				 var sid=[];//每个尺寸
                 for(i in id){
-                    num[i]= $("#text_box"+id[i]).val();
+                    sid[i]=$('#J_CheckBox_'+id[i]).attr('rel');
+                    num[i]= $(".text_box"+id[i]).val();
                     color[i]= $("#color"+id[i]+" option:selected").val();
                     measure[i]= $("#measure"+id[i]+" option:selected").val();
                 }
                 //alert(color);alert(measure);
-
+                //alert(sid);
 
                 $.ajax({
                     type: "POST",
 
                     data: {
+                        sid:sid,
                         pid:id,
 						num:num,
 						color:color,
@@ -290,11 +294,11 @@
 					},
 					url: "{:U('shopcart')}",
                     success:function (re) {
-
+                        alert(JSON.stringify(re))
 
                     }
                 });
-                window.location.href="/Fashionmall/index.php/Order/pay";
+               window.location.href="{:U('Order/pay')}";
 
 
 			}

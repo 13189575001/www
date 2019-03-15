@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>全部文章</title>
+    <link  type="text/css" rel="stylesheet"  href="__USER__/js/layui/css/layui.css"/>
+    <script  src="__USER__/js/jquery.min.js"></script>
+    <script  src="__USER__/js/jquery.js"></script>
+    <script  src="__USER__/js/layui/layui.all.js"></script>
+    <script  src="__USER__/js/layui/layui.js"></script>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/style.css"/>
+    <link  type="text/css" rel="stylesheet"  href="__ADMIN__/css/index.css"/>
+    <!-- 动态菜单JS -->
+    <script type="text/javascript"  src="__ADMIN__/js/menu.js"></script>
+</head>
+<body>
+<div class="container">
+    <div class="cont-top">
+        <div class="companyname">个性服饰后台管理</div>
+        <div class="cont-top-middle">
+            <ul>
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon.png">
+                        </div>
+                        <div class="top-txt">购物单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <div class="top-middle">
+                            <img src="__ADMIN__/img/icon1.png">
+                        </div>
+                        <div class="top-txt">收款单</div>
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+        <div class="cont-top-rg">
+            <ul class="advanced-menu">
+                <li>
+                    <div class="top-search">
+                        <div class="t-s-l">
+                            <span class="left-line"></span>
+                            <input type="text" value="搜库存" class="search-type" disabled>
+                            <span class="triangle-bottom"></span>
+                        </div>
+                        <div class="t-s-l">
+                            <input type="text" placeholder="请输入商品编码或名称" class="search-dt" autocomplete="off">
+                            <span class="right-line"></span>
+                            <span class="right-icon"><img src="__ADMIN__/img/search-icon.png"></span>
+                        </div>
+                    </div>
+                </li>
+
+                <li class="default" style="position:relative;">
+                    <span class="user"><img src="__ADMIN__/img/user.png"></span>
+                    <a  href="#" class="special"> 小丫头<i><img src="__ADMIN__/img/xl.png"></i></a>
+                    <div class="drop-down-wrap" style="width:180px;left:15px;display: none;">
+                        <div class="drop-down">
+                            <span class="triangle-border"></span>
+                            <span class="triangle-bg"></span>
+                            <ul class="del-ul">
+                                <li><a href="#" class="hot">首耀照明</a></li>
+                                <li><a href="#">小丫头</a></li>
+                                <li><a href="#">操作日志</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <ul class="advanced-menu">
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon1.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon2.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon3.png"></a>
+                </li>
+                <li>
+                    <a href="#"><img  src="__ADMIN__/img/top-icon4.png"></a>
+                </li>
+                <li>
+                    <a href="{:U('Login/logout')}"><img  src="__ADMIN__/img/top-icon5.png" onclick="return confirm('你确定要退出系统吗？')"></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="left-menu" style="height:949px;">
+        <div class="menu-list">
+            <ul>
+
+
+                <li class="menu-list-02">
+                    <a  href="{:U('Product/product')}">
+                        <p class="fumenu">产品管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+
+                    </div>
+                </li>
+
+                <li class="menu-list-01" >
+                    <a href="{:U('Order/goods_order')}">
+                        <p class="fumenu">订单管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+                        <p class="zcd" id="zcd8">下单账户</p>
+
+                    </div>
+                </li>
+
+                <li class="menu-list-01" >
+                    <a href="{:U('User/user')}">
+                        <p class="fumenu">客户管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+
+                    </div>
+                </li>
+
+                <li class="menu-list-02">
+                    <a href="#">
+                        <p class="fumenu">员工管理</p>
+                        <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                    </a>
+                    <div class="list-p">
+                        <a href="{:U('Manager/manager')}"><p class="zcd" >全部管理账号</p></a>
+                    </div>
+                </li><li class="menu-list-02">
+                <a href="#">
+                    <p class="fumenu">推文管理</p>
+                    <img class="xiala" src="__ADMIN__/img/xiala.png" />
+                </a>
+                <div class="list-p">
+                    <a href="{:U('Article/all_article')}"><p class="zcd" >全部推文</p></a>
+                    <a href="{:U('Article/add_article')}"><p class="zcd" >发布推文</p></a>
+                </div>
+            </li>
+            </ul>
+        </div>
+    </div>
+    <div class="right-menu">
+        <div class="main-hd">
+            <div class="page-teb" style="height:auto;">
+                <div class="l-tab-links">
+                    <ul style="left:0;">
+                        <li class="l-select">
+                            <a href="{:U('Index/index')}" style="padding:0 25px;">首页</a>
+                        </li>
+                    </ul>
+                </div>
+<table class="layui-hide" id="test"  lay-filter="test"></table>
+
+<script type="text/html" id="toolbarDemo">
+    <div class="layui-btn-container">
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckData">获取选中行数据</button>
+        <button class="layui-btn layui-btn-sm" lay-event="getCheckLength">获取选中数目</button>
+        <button class="layui-btn layui-btn-sm" lay-event="isAll">验证是否全选</button>
+    </div>
+</script>
+
+<script type="text/html" id="barDemo">
+    <a class="layui-btn layui-btn-xs edit" lay-event="edit">编辑</a>
+    <a class="layui-btn layui-btn-danger layui-btn-xs" lay-event="del">删除</a>
+</script>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+<!-- 注意：如果你直接复制所有代码到本地，上述js路径需要改成你本地的 -->
+
+<script>
+    //分页参数设置 这些全局变量关系到分页的功能
+    //var startAllAppoint = 0;//开始页数    这个可以省略
+    var pageSize = 8;//每页显示数据条数
+    var currentPageNo = 1;//当前页数
+    var dataLength=2;//数据总条数
+
+    layui.use('table', function(){
+        var laypage = layui.laypage //分页
+            ,layer = layui.layer //弹层
+            ,table = layui.table //表格
+            ,element = layui.element; //元素操作
+        table.render({
+            elem: '#test'
+            ,url:'{:U("Article/article_table")}'
+            ,toolbar: '#toolbarDemo'
+            ,title: '推文管理'
+            ,page: true //开启分页
+            ,totalRow: true //开启合计行
+            ,cols: [[
+                {type: 'checkbox', fixed: 'left'}
+                ,{field:'aid', title:'ID', width:120, fixed: 'left', unresize: true, sort: true}
+                ,{field:'title', title:'标题', width:150, edit: 'text'}
+                ,{field:'time', title:'发表时间', width:200, edit: 'text'}
+                ,{field:'content', title:'内容', width:700, edit: 'text'}
+                ,{fixed: 'right', title:'操作', toolbar: '#barDemo', width:150}
+            ]]
+        });
+
+        //头工具栏事件
+        table.on('toolbar(test)', function(obj){
+            var checkStatus = table.checkStatus(obj.config.id);
+            switch(obj.event){
+                case 'getCheckData':
+                    var data = checkStatus.data;
+                    layer.alert(JSON.stringify(data));
+                    break;
+                case 'getCheckLength':
+                    var data = checkStatus.data;
+                    layer.msg('选中了：'+ data.length + ' 个');
+                    break;
+                case 'isAll':
+                    layer.msg(checkStatus.isAll ? '全选': '未全选');
+                    break;
+            };
+        });
+
+
+        //监听行工具事件
+        table.on('tool(test)', function(obj){
+            var data = obj.data;
+            //console.log(data.aid);
+            if(obj.event === 'del'){
+                layer.confirm('真的删除行么', function(index){
+
+                    $.ajax({
+                        type:"POST",
+                        url: "{:U('Article/del_article')}",
+                        // contentType: "application/json", //如果提交的是json数据类型，则必须有此参数,表示提交的数据类型
+                        //dataType: "json", //表示返回值类型，不必须
+                        data: {
+                            aid: data.aid
+                        },
+                        success: function (jsonResult) {
+                            if(jsonResult){
+                                obj.del();
+                                layer.close(index);
+                                //layer.msg(JSON.stringify(jsonResult));
+                                layer.msg('删除成功');
+                            }else{
+                                layer.msg('删除失败');
+                            }
+
+                        },
+
+                    });
+                });
+            } else if(obj.event === 'edit'){
+
+                    location.href="{:U('Article/edit_article')}?id="+data.aid;
+
+            }
+        });
+    });
+</script>
+
+</body>
+</html>

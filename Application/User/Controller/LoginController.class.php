@@ -11,13 +11,13 @@ namespace User\Controller;
 
 use Think\Controller;
 
-class LoginControllrt extends Controller
+class LoginController extends Controller
 {
     public function _initialize()
     {
         $sid = session('id');//检测session是否存在，不存在就跳登录页面
         if (! isset($sid)) {
-            $this->redirect('Public/login');
+            $this->redirect('Public/Login');
         }
     }
 
